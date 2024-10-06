@@ -1,64 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap-image/1.1">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <url>
-    <loc>https://woodytai.github.io/</loc>
-    <lastmod>2024-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<url>
+  <loc>https://woodytai.github.io/</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/404</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/linktree</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/about</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/resume</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/articles</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/media</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/contact</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/quotes/byauthor</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/quotes/</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/writings/Pfc2A_Favourite%20Quote</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.55</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/pages/writings/Who%20Am%20I</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.55</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/docu/mentions/k9mysosr2zrwrgzj6lrd1q8c35viwwzw5fcjcu870zmi81gwlltbmu6kwgcundyldyss00lzhdaeud40ktw6n0gwoo2g3ev8/Mitsubishi%20Electric%20Eco%20Tech%20Cup.pdf</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/docu/mentions/MUNESCO_HKEJ.JPG</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/docu/static/3f6d7a673d18619baf443be7e6655950d2c87408ac9b487358c9abbd514f9d8ef46b9f65a74a8ea7ef7b113e1c320e53/WoodyTai.vcf</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/docu/static/7627b053eba6fbb669c3ac8b3ca14882961785a983bbb4a023d00015128297d75ff398673c017a79879a8f0e8dc17d73/LCOY HK24 Statement.pdf</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/docu/static/CFSS_CCA/Details of Woody Tai's CCA Career at The Chinese Foundation Secondary School.pdf</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.0</priority>
+</url>
 
-  <url>
-    <loc>https://woodytai.github.io/linktree</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
+<url>
+  <loc>https://woodytai.github.io/pages/writings/Perfectionism</loc>
+  <lastmod>2024-10-06T03:08:33+00:00</lastmod>
+  <priority>0.55</priority>
+</url>
 
-  <url>
-    <loc>https://woodytai.github.io/about</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://woodytai.github.io/resume</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://woodytai.github.io/contact</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
-    <loc>https://woodytai.github.io/articles</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://woodytai.github.io/media</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-<!-- WRITINGS -->
-
-  <url>
-    <loc>https://woodytai.github.io/writings</loc>
-    <lastmod>2024-10-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  
 
 </urlset>
