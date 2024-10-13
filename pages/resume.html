@@ -151,6 +151,13 @@
                             div.style.display = 'none';
                             document.getElementById("toggleButton_text").innerHTML = "Show Timeline";
                         }
+                        document.querySelectorAll('.filter_btn').forEach(button => {
+                            button.classList.remove('selected');
+                        });
+                        const allButton = document.querySelector('button[onclick="filterTimeline(\'all\')"]');
+                        if (allButton) {
+                            allButton.classList.add('selected');
+                        }
                     };
                 </script>
                 <div id="certifications">
