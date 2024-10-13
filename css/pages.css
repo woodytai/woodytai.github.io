@@ -92,6 +92,11 @@
     text-decoration: underline;
 }
 
+.Resume button{
+    background-color: var(--col-asso);
+    outline: none;
+}
+
 .image-container {
 position: fixed;
 top: 50%;
