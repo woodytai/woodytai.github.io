@@ -349,6 +349,10 @@ footer{
 .dropdown-content a:hover {background-color: var(--col-gray-op);}
 .show { display: block; }
 
+.special-notes{
+    border-bottom: 1px dashed rgb(32,33,36);
+}
+
 /* MOBILE SUPPORT */
 
 /* Mobile Styles */
