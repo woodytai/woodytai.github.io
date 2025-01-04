@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <!-- Meta Tagging -->
-    <title>Woody Tai's Website - Contacts</title>
-    <meta name="description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my contacts etc. "./>
+    <title>Woody Tai's Website - Articles</title>
+    <meta name="description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings etc. "/>
     <meta name="application-name" content="Woody's App">
     <meta name="apple-mobile-web-app-title" content="Woody's App">
     <meta name="author" content="Woody Tai">
@@ -16,7 +16,7 @@
     <meta property="og:url" content="woodytai.github.io">
     <meta property="og:title" content="Woody Tai's Website">
     <meta property="og:site_name" content="Woody Tai's Website">
-    <meta property="og:description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to contacting me. ">
+    <meta property="og:description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings and articles. ">
     <meta property="og:image" itemprop="image" content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -24,7 +24,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:secure_url" content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
     <meta name="twitter:creator" content="@woodyta1">
-    <meta name="twitter:card" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my contacts. ">
+    <meta name="twitter:card" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings and articles. ">
     <meta name="twitter:title" content="Woody Tai's Website">
     <meta name="twitter:description" content="I'm trying to better the world, one artcles at a time. ">
     <meta name="twitter:site" content="woodytai.github.io">
@@ -57,9 +57,9 @@
                 <a href="./about">About Me</a>
                 <a href="./resume">Resume</a>
                 <div style="margin: 0; padding: 0; height: 0;">
-                    <a class="AM_dropdown" href="">Articles & Media</a>
+                    <a class="AM_dropdown menuselection" href="">Articles & Media</a>
                     <div class="dropdown-content">
-                        <a href="./articles">My Writings</a>
+                        <a class="menuselection" href="./articles">My Writings</a>
                         <a href="./media">Media Coverage</a>
                     </div>
                     <script>
@@ -79,28 +79,111 @@
                         });
                     </script>
                 </div>
-                <a class="menuselection" id="menuselection" href="contact">Contact Me</a>
-                <a style="display: none;" id="contacts_temp_var" class="menuselection" href="./contact">Contact Me</a>
+                <a href="./contact">Contact Me</a>
             </nav>
         </div>
             <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
     </header>
 
     <div class="content" style="margin-top: var(--space-small);">
-
-        <h1 class="centrered" id="contact_title" style="margin-top:0;" >Contact Me!</h1>
+      <article>
+        <h1>Writings</h1>
+        <h2 id="articles_subtitle">Mainly my thoughts and poetry. Below are some of my favorites.</h2>
         <br>
-        <h1 id="contact_main" style="text-align: left; padding: inherit; font-style: oblique;"><strong>Let's connect and chat!</strong> </h1><br>
-        <h2>Email: <a href="matilto:woodytai.secondary.hk@gmail.com"><strong> woodytai.secondary<wbr>.hk<wbr>@gmail.com</strong></a></h2> <br>
-        <h2 id="contact_linkedin">LinkedIn: <a href="https://www.linkedin.com/in/woody-tai" target="_blank"><strong>linkedin.com/in/<wbr>woody-tai</strong></a></h2>
-        <br><br>
-        <!-- <h3>Admin services portal: <a href="./admin">HERE</a></h3> -->
-        <br><br>
-        <iframe id =  "forms_state" loading="lazy" data-tally-src="https://tally.so/embed/wkW4zd?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
-        "></iframe>
-        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        <div>
+          <div class="articles-filter-buttons" id="article-div-border-button"> 
+            <button class="articles-filter-button active" data-filter="all">All</button>
+            <button class="articles-filter-button" data-filter="article">Article</button>
+            <button class="articles-filter-button" data-filter="publications">Essay</button>
+            <button class="articles-filter-button" data-filter="poetry">Poetry</button>
+            <button class="articles-filter-button" data-filter="advocacy">Op-Ed / Advocacy</button>
+            <button class="articles-filter-button" data-filter="stem">Research</button>
+            <button class="articles-filter-button" data-filter="tech">Technology</button>
+            <!-- <button class="articles-filter-button" data-filter="misc">Other</button> -->
+          </div>
+          <div class="articles-cards-container">
+            <h2 class="media_year_id" id="year2024">2024</h2>
+             <div class="articles-card" data-type="article publications advocacy tech">
+              <h6>
+                IBCOL
+                <a rel="nofollow" class="articles-card-a-tag" onclick="showImage('./docu/mentions/IBCoLzUphulLucbVN2JnlyGHZB7EDvrOxZuuS8HayZ5GUmTKtbroNYODAyW2YJYP3edmx3oLNCO5yOKsm4HsM3J1hJNVmTfu/IBCOL_2024_Posterboard.png')"> [Posterboard]</a>
+                <a class="articles-card-a-tag" href="https://science-direct.github.io/redirect/?IBCOL24" target="_blank">[White Paper]</a>
+              </h6>
+              <time datetime="2024-11-21">2024-11-21</time>
+            </div>
+            <div class="articles-card" data-type="story poetry misc">
+              <h6>
+                What is failure?
+                <a class="articles-card-a-tag" href="./writings/Pfc2A_Favourite Quote" target="_blank">[Here]</a>
+              </h6>
+              <time datetime="2024-09-24">2024-09-24</time>
+            </div>
 
-       
+            <div class="articles-card" data-type="story poetry misc">
+              <h6>
+                Local Conference of Youth Hong Kong 2024 — Collective Position Paper
+                <a class="articles-card-a-tag" href="./writings/Who Am I" target="_blank">[Here]</a>
+              </h6>
+              <time datetime="2024-08-01">2024-09-19</time>
+            </div>
+
+            <div class="articles-card" data-type="story poetry misc">
+              <h6>
+                Who Am I?
+                <a class="articles-card-a-tag" href="./writings/Who Am I" target="_blank">[Here]</a>
+              </h6>
+              <time datetime="2024-08-01">2024-09-19</time>
+            </div>
+
+            <div class="articles-card" data-type="advocacy tech">
+              <h6>
+                R R R, so many hard Rs in our new tech-infused world
+                <a class="articles-card-a-tag" href="https://medium.com/@woody.tai/r-r-r-so-many-hard-rs-in-our-new-tech-infused-world-0a6840d28dfc" target="_blank">[Medium]</a>
+              </h6>
+              <time datetime="2024-08-01">2024-08-01</time>
+            </div>
+
+            <div class="articles-card" data-type="story misc">
+              <h6>
+                My favourite quotes
+                <a class="articles-card-a-tag" href="quotes">[Here]</a>
+              </h6>
+              <time datetime="2024-08-01">2024-08-01</time>
+            </div>
+
+            <div class="articles-card" data-type="advocacy tech">
+              <h6>
+                Understanding Technology
+                <a class="articles-card-a-tag" href="https://medium.com/@woodytai/the-evolving-landscape-of-technology-literacy-4f522ca43eb6" target="_blank">[Medium]</a>
+              </h6>
+              <time datetime="2024-08-01">2024-08-01</time>
+            </div>
+
+            <div class="articles-card" data-type="publications stem">
+              <h6>
+                Mitsubishi Electric Eco Tech Cup 2024
+                <a class="articles-card-a-tag" href="https://gocuhk-my.sharepoint.com/personal/green-stem_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgreen-stem_cuhk_edu_hk%2FDocuments%2FMitsubishi%20Electric%20Eco%20Tech%20Cup%202024%2F%E5%85%AC%E9%96%8B%E7%B5%84%2FP24_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%99%BC%E5%B1%95%E7%9A%84%E7%A9%BA%E9%96%93%2F%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E4%B8%89%E8%8F%B1%E9%9B%BB%E6%A9%9F%E7%B6%A0%E7%BA%8C%E5%89%B5%E7%A7%91%E7%9B%832024%E5%85%AC%E9%96%8B%E7%B5%84%E5%88%9D%E8%B3%BD%2C%20%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB%2Epdf&parent=%2Fpersonal%2Fgreen-stem_cuhk_edu_hk%2FDocuments%2FMitsubishi%20Electric%20Eco%20Tech%20Cup%202024%2F%E5%85%AC%E9%96%8B%E7%B5%84%2FP24_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%99%BC%E5%B1%95%E7%9A%84%E7%A9%BA%E9%96%93&ga=1" target="_blank">[CUHK]</a>
+                <a class="articles-card-a-tag" href="./docu/mentions/k9mysosr2zrwrgzj6lrd1q8c35viwwzw5fcjcu870zmi81gwlltbmu6kwgcundyldyss00lzhdaeud40ktw6n0gwoo2g3ev8/Mitsubishi Electric Eco Tech Cup.pdf" target="_blank">[Archived]</a>
+              </h6>
+              <time datetime="2024-07-15">2024-07-15</time>
+            </div>
+
+            <h2 class="media_year_id" id="year2023">2023</h2>
+            <div class="articles-card" data-type="story poetry misc">
+              <h6>
+                My greatest weekness
+                <a class="articles-card-a-tag" href="./writings/Perfectionism" target="_blank">[Here]</a>
+              </h6>
+              <time datetime="2024-08-01">2023-04-29</time>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </article>
     </div>
 
     <div class="footer">
@@ -110,21 +193,57 @@
             <p> © 2024 Woody TAI </p>
         </div>
     </div>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function() {
-            var urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('technical')) {
-                document.getElementById('forms_state').src = 'https://docs.google.com/forms/d/e/1FAIpQLSfYgaKRwncpNC3NlshkvM0CJwc1cXUWvJ89jM01sQYKVDtEGQ/viewform?embedded=true';
-                document.getElementById("contact_linkedin").innerHTML = "";
-                document.getElementById("contact_title").innerHTML = "Bug Report Form";
-                document.getElementById("contact_main").innerHTML = "Fill in the form bellow to the best of your abilities, we will try to get back to you in 2 weeks";
-                document.getElementById("menuselection").classList.remove("menuselection")
-                document.getElementById("menuselection").style.display = "none";
-                document.getElementById("contacts_temp_var").style.display = "block";
-            }
-        });
-    </script>
-    <script>
+</body>
+</html>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.articles-filter-button');
+      const cards = document.querySelectorAll('.articles-card');
+
+      filterButtons.forEach(button => {
+          button.addEventListener('click', function() {
+              const filters = this.dataset.filter.split(',');
+
+              filterButtons.forEach(btn => btn.classList.remove('active'));
+              this.classList.add('active');
+
+              cards.forEach(card => {
+                  const cardTypes = card.getAttribute('data-type').split(' ');
+
+                  if (filters.includes('all') || filters.some(filter => cardTypes.includes(filter.trim()))) {
+                      card.style.display = 'block';
+                  } else {
+                      card.style.display = 'none';
+                  }
+              });
+          });
+      });
+  });
+  </script>
+  <script>
+    function showImage(image_source) {
+      var imageContainer = document.createElement("div");
+      imageContainer.className = "image-container";
+
+      var image = document.createElement("img");
+      image.src = image_source;
+      var closeButton = document.createElement("button");
+      closeButton.textContent = "☒";
+      closeButton.className = "close-btn";
+      document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space' || event.code === 'Enter') {
+            closeButton.onclick();
+        }
+      });
+      closeButton.onclick =function () {
+        document.body.removeChild(imageContainer);
+          };
+      imageContainer.appendChild(closeButton);
+      imageContainer.appendChild(image);
+      document.body.appendChild(imageContainer);
+    }
+  </script>
+  <script>
         // Function to toggle dark mode
         function toggleDarkMode() {
             const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
@@ -141,5 +260,3 @@
             }
         });
     </script>
-</body>
-</html>
