@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <meta charset="utf-8">
+  <meta content="notranslate">
+  <link rel="icon" href="../images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <meta name="keywords" content="Admin, Legal, Crawling Terms">
+  <meta name="author" content="Woody Tai">
+  <meta property="og:image" content="../images/logos/SharingImage.png">
+
+  <meta name="twitter:description" content="Writings by Woody Tai">
+  <meta name="twitter:image" content="../images/logos/SharingImage.png">
+  <link rel="stylesheet" type="text/css" href="../css/writings.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../"><img class="logo" alt="Woody_Tai_logo" src="../images/logos/WoodyTai.png" alt="Logo"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="../">Home</a>
+                <div style="margin: 0; padding: 0; height: 0;">
+                    <a class="AM_dropdown" href="">Articles & Media</a>
+                    <div class="dropdown-content">
+                        <a href="./articles">My Writings</a>
+                        <a href="./media">Media Coverage</a>
+                    </div>
+                    <script>
+                        document.querySelector('.AM_dropdown').addEventListener('click', function(event) {
+                            event.preventDefault();
+                            const dropdown = document.querySelector('.dropdown-content');
+                            dropdown.classList.toggle('show');
+                        });
+
+                        window.addEventListener('click', function(event) {
+                            if (!event.target.matches('.AM_dropdown')) {
+                                const dropdowns = document.querySelectorAll('.dropdown-content');
+                                dropdowns.forEach(dropdown => {
+                                    dropdown.classList.remove('show');
+                                });
+                            }
+                        });
+                    </script>
+                </div>
+                <a href="../contact?">Contact Me</a>
+            </nav>
+        </div>
+            <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+    </header>
+
+    <div class="content" style="margin-top: var(--space-small);">
+      <main>
+        <article>
+          <div class="articlecentered"><h2><span>Last Revised: Jan 04, 2014</span></h2></div>
+          <hr>
+        </article>
+        <article>
+          <head>
+            <title>Woody Tai's Website Crawling Guide</title>
+            <meta property="og:title" content="Woody Tai's Website Crawling Guide">
+            <meta name="twitter:title" content="Woody Tai's Website Crawling Guide">
+            <meta name="description" property="og:description" itemprop="description" content="How to actually crawl and understand my website from a webcrawler's perspective! ">
+            <meta name="twitter:card" content="Woody Tai's Website Crawling Guide">
+          </head>
+
+          <h6>These terms govern your collection of data from this site through automated means, such as through bots, robots, spiders, crawlers, or web scrapers ("Automated Crawling & Indexing").</h6>
+
+          <h6>You agree to engage in Automated Crawling & Indexing only of the. You agree:
+          <ol>
+              <li>that you will respect all restrictions in any robot exclusion header;</li>
+              <li>that you will only use your true IP address and user agent identity;</li>
+              <li>that you will not manipulating identifiers or masking your services under another party's IP address or user agent string.</li>
+          </ol>
+
+          <h6>Refrain from renting, leasing, loaning, trading, selling, or transferring any approved IP address or user agent without written consent.</h6>
+          <h6>You will not transfer collected data to others in aggregated or bulk form.</h6>
+          <h6>Destroy all collected data upon written request </h6>
+          <h6>Nothing in these terms confers any grant or license of intellectual property rights, whether by estoppel, implication, or otherwise.</h6>
+
+          <h6>If any provision of this lease is found to be invalid or unenforceable by a court, the remaining provisions shall continue in full force and effect. The invalid provision shall be modified to the extent necessary to make it valid and enforceable.</h6>
+
+        </article>
+
+      <main>
+    </div>
+    <div class="footer">
+        <div>
+            <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+            <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a>
+            <h6> © 2024 Woody TAI </h6>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+      const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+      const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function() {
+      const savedMode = localStorage.getItem('mode');
+      if (savedMode) {
+          document.body.classList.add(savedMode);
+      }
+  });
+</script>

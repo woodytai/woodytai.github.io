@@ -1,8 +1,8 @@
 /* Base styles */
 :root {
     --col-main-bright: #000000;
-    --col-asso-bright: #eeeded;
-    --col-off-bright: #769b9c;
+    --col-asso-bright: hsl(0, 3%, 93%);
+    --col-off-bright: #fe8c0d;
     --col-gray-bright: #BDBDBD;
     --col-blue-bright: #7a7aff;
     --col-main-dark: #eeeded;
@@ -54,6 +54,42 @@
     --col-main-op: var(--col-main-bright);
     --col-gray-op: var(--col-gray-bright);
 }
+
+
+/* Selection System */
+html ::selection {
+    background: var(--col-off);
+}
+
+.listItem .answer ::selection{
+    background: var(--col-off);
+}
+
+#testimonials ::selection{
+    background: var(--col-off-op);
+}
+
+nav ::selection {
+    color: var(--col-main);
+    background: var(--col-gray);
+}
+
+.FAQContainer ::selection{
+    background: var(--col-blue-op);
+    color: var(--col-gray-op);
+}
+
+.timeline-item::selection{
+    
+}
+
+/* main h6 ::selection{
+    color: var(--col-main);
+    background: var(--col-off);
+} */
+
+
+/*  */
 
 html, body {
     background-color: var(--col-asso);
@@ -191,17 +227,6 @@ button{
     border-style: none;
 }
 
-
-.content ::-moz-selection {
-  color: var(--col-asso);
-  background: var(--col-main);
-}
-
-.content ::selection {
-  color: var(--col-asso);
-  background: var(--col-main);
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -210,16 +235,6 @@ header {
     line-height: 2.3px;
     font-size: 2.5vh;
     padding-right: var(--space-header);
-}
-
-header ::-moz-selection {
-  color: var(--col-main);
-  background: var(--col-gray);
-}
-
-header ::selection {
-  color: var(--col-main);
-  background: var(--col-gray);
 }
 
 .logo {
@@ -349,8 +364,23 @@ footer{
 .dropdown-content a:hover {background-color: var(--col-gray-op);}
 .show { display: block; }
 
+
 .special-notes{
     border-bottom: 1px dashed rgb(32,33,36);
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    top: 100%; /* Position below the span */
+    right: 0; /* Align to the right */
+    z-index: 10; /* Ensure it's above other elements */
 }
 
 /* MOBILE SUPPORT */

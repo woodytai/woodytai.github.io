@@ -1,5 +1,4 @@
-
-# All crawling activities on this site must comply with Our Crawling Terms and Conditions.
+# All crawling activities on this site are bound by this Crawling Terms and Conditions.
 # See http://woodytai.github.io/admin/crawling-terms
 
 # This is a robots.txt for https://woodytai.github.io

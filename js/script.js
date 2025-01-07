@@ -29,4 +29,4 @@ document.addEventListener('DOMContentLoaded', function () {
         // Event listeners
         menuToggle.addEventListener('click', toggleMenu); // Toggle menu on click
         window.addEventListener('click', closeMenu); // Close menu on outside click
-        });
+});

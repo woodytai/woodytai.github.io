@@ -1,4 +1,4 @@
-article {
+.article, article {
     font-family: 'Times New Roman', serif;
     font-size: 20px;
     line-height: 1.5;
@@ -6,7 +6,7 @@ article {
     letter-spacing: 0.5px;
     text-align: justify;
 }
-article p {
+.article, article p{
     text-indent: 30px;
     margin-bottom: 15px;
 }
@@ -16,7 +16,9 @@ article q{
     font-family: "Roboto Condensed", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
-    font-size: 1.5em;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-align: justify;
 }
 
 .articlecentered {

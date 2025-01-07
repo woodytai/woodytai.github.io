@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <!-- Meta Tagging -->
     <title>Woody Tai's Website - Contacts</title>
-    <meta name="description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my contacts etc. "./>
+    <meta name="description" content="Hi, I'm Woody, a High School Student, This page is used to show some *brief* FAQs and providing methods of reaching out to me one way or another."/>
     <meta name="application-name" content="Woody's App">
     <meta name="apple-mobile-web-app-title" content="Woody's App">
     <meta name="author" content="Woody Tai">
@@ -16,7 +16,7 @@
     <meta property="og:url" content="woodytai.github.io">
     <meta property="og:title" content="Woody Tai's Website">
     <meta property="og:site_name" content="Woody Tai's Website">
-    <meta property="og:description" content="Hi, I'm Woody, a High School Student, This is a page dedicated to contacting me. ">
+    <meta property="og:description" content="Hi, I'm Woody, a High School Student, This page is used to show some *brief* FAQs and providing methods of reaching out to me one way or another. ">
     <meta property="og:image" itemprop="image" content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
@@ -24,7 +24,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:secure_url" content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
     <meta name="twitter:creator" content="@woodyta1">
-    <meta name="twitter:card" content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my contacts. ">
+    <meta name="twitter:card" content="Hi, I'm Woody, a High School Student, This page is used to show some *brief* FAQs and providing methods of reaching out to me one way or another">
     <meta name="twitter:title" content="Woody Tai's Website">
     <meta name="twitter:description" content="I'm trying to better the world, one artcles at a time. ">
     <meta name="twitter:site" content="woodytai.github.io">
@@ -86,20 +86,82 @@
             <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
     </header>
 
-    <div class="content" style="margin-top: var(--space-small);">
+    <main>
+        <div class="content" style="margin-top: var(--space-small);">
 
-        <h1 class="centrered" id="contact_title" style="margin-top:0;" >Contact Me!</h1>
-        <br>
-        <h1 id="contact_main" style="text-align: left; padding: inherit; font-style: oblique;"><strong>Let's connect and chat!</strong> </h1><br>
-        <h2>Email: <a href="matilto:woodytai.secondary.hk@gmail.com"><strong> woodytai.secondary<wbr>.hk<wbr>@gmail.com</strong></a></h2> <br>
-        <h2 id="contact_linkedin">LinkedIn: <a href="https://www.linkedin.com/in/woody-tai" target="_blank"><strong>linkedin.com/in/<wbr>woody-tai</strong></a></h2>
-        <br><br><br><br>
-        <iframe id =  "forms_state" loading="lazy" data-tally-src="https://tally.so/embed/wkW4zd?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
-        "></iframe>
-        <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+            <h1 class="centrered" id="contact_title" style="margin-top:0;" >Contact Me!</h1>
+            <br>
+            <h1 id="contact_main" style="text-align: left; padding: inherit; font-style: oblique;"><strong>Let's connect and chat!</strong> </h1><br>
+            <h3 id="contact_email">Email: <a href="matilto:woodytai.secondary.hk@gmail.com"><strong> woodytai.secondary<wbr>.hk<wbr>@gmail.com</strong></a></h3> <br>
+            <h3 id="contact_linkedin">LinkedIn: <a href="https://www.linkedin.com/in/woody-tai" target="_blank"><strong>linkedin.com/in/<wbr>woody-tai</strong></a></h3>
+            <hr>
+            <div class="FAQContainer contact-primary">
+                <h2>Frequently asked questions</h2>
+                <ul class="list">
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">Who are you?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off">Hi, I'm Woody. I'm a student specializing in biochemistry and computer science. I'm passionate about bridging the gap between biomedical sciences and technology, bringing a fresh perspective and industry knowledge. Nice to meet you!<br><br>Read more about me <a href="./about">here</a></h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">What do you do?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off">I'm a learner at heart, currently pursuing a garden variety of projects in anything that intrests me. But if I were to pick one; Blending science with technology</h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">How'd you summarise your life with just 3 sentences!</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off"><ol><li>I was born and raised in Hong Kong, recently moved to the UK for a sixth form education</li><li>Proudly qualified for the Hong Kong Team to international competitions(ISEF, IBCOL)</li><li>Passion in science and technology is building my dreams in <span>Diplomacy</span>, <span>Comp Sci</span> and <span>Biomedical Science</span></li></ol></h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">Why are you interested in Diplomacy/IR?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <!-- <div class="answer"><h6 class="off">I haven't always belived in the might of the pen until I saw the wave of anti-LGBTQ bills being passed across the world, thats when I truely understood the power of words — the power to potentially save or harm</b> generations to come.</h6></div> -->
+                        <div class="answer"><h6 class="off">Diplomacy and international Relations as a whole has taught me many skills that I still use today, whether that be resolving conflicts or understanding both sides of an argument because <i>no one</i> NO ONE sees themselves as the 'bad guy'. Diplomacy also has the added benefir of collaborative problem-solving rather than fending for oneself, which is a skill I believe to be under utilised in today's society.</div>
+                    </li>
+                                        
+                    
+                </ul>
+                <script>
+                    function toggleAnswer(event) {
+                        event.preventDefault();
+                        const listItem = event.currentTarget.closest('.listItem');
+                        const allItems = document.querySelectorAll('.listItem');
+                        allItems.forEach(item => {
+                            if (item !== listItem) {
+                                item.classList.remove('active');
+                            }
+                        });
+                        listItem.classList.toggle('active');
+                    }
+                </script>
+            </div>
 
-       
-    </div>
+            
+            <br><br><br><br>
+            <iframe id =  "forms_state" loading="lazy" data-tally-src="https://tally.so/embed/wkW4zd?alignLeft=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Contact form
+            "></iframe>
+            <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+    
+           
+        </div>
+    </main>
 
     <div class="footer">
         <div>
@@ -109,16 +171,32 @@
         </div>
     </div>
     <script type="text/javascript">
+        function changedata(newlink, contact_linkedin, contact_title, contact_main, hide){
+            document.getElementById('forms_state').src = newlink;
+            document.getElementById("contact_linkedin").innerHTML = contact_linkedin;
+            document.getElementById("contact_title").innerHTML = contact_title;
+            document.getElementById("contact_main").innerHTML = contact_main;
+            document.getElementById("menuselection").classList.remove("menuselection")
+            document.getElementById("menuselection").style.display = "none";
+            document.getElementById("contacts_temp_var").style.display = "block";
+            if(hide = "True"){
+                const contactDivs = document.querySelectorAll('.contact-primary');
+                contactDivs.forEach(div => {
+                    div.style.display = 'none';
+                });
+            }
+        }
         document.addEventListener("DOMContentLoaded", function() {
             var urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('technical')) {
-                document.getElementById('forms_state').src = 'https://docs.google.com/forms/d/e/1FAIpQLSfYgaKRwncpNC3NlshkvM0CJwc1cXUWvJ89jM01sQYKVDtEGQ/viewform?embedded=true';
-                document.getElementById("contact_linkedin").innerHTML = "";
-                document.getElementById("contact_title").innerHTML = "Bug Report Form";
-                document.getElementById("contact_main").innerHTML = "Fill in the form bellow to the best of your abilities, we will try to get back to you in 2 weeks";
-                document.getElementById("menuselection").classList.remove("menuselection")
-                document.getElementById("menuselection").style.display = "none";
-                document.getElementById("contacts_temp_var").style.display = "block";
+                changedata("https://docs.google.com/forms/d/e/1FAIpQLSfYgaKRwncpNC3NlshkvM0CJwc1cXUWvJ89jM01sQYKVDtEGQ/viewform?embedded=true","","Bug Report Form","Fill in the form bellow to the best of your abilities, we will try to get back to you in 2 weeks","True")
+            }
+            if (urlParams.has('admin')) {
+                changedata("https://docs.google.com/forms/d/e/1FAIpQLSeu0ud4p5LfZra9FiJe0s3JpHEOxarS-BlOr_Jsi9F29Yz1bQ/viewform??embedded=true","","Admin Related Issues","Please fill in the form bellow to the best of your abilities, I'll will try to get back to you as soon as possible","True")
+            }
+            if (urlParams.has('misc')) {
+                document.getElementById("contact_email").style.display = "none";
+                changedata("","","Contact Me","","True")
             }
         });
     </script>
