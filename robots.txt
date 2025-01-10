@@ -9,6 +9,7 @@ Disallow: /private/*
 Disallow: /SUP_private/
 Disallow: *?
 Disallow: *.html&
+Disallow: /404
 
 # User-agent: Googlebot
 # User-agent: Bingbot
@@ -17,9 +18,6 @@ Disallow: *.html&
 
 User-agent: Selenium
 Disallow: /
-
-User-agent: *
-Disallow: /404
 
 # AI sources
 # User-agent: Googlebot
