@@ -81,9 +81,9 @@ nav ::selection {
     color: var(--col-gray-op);
 }
 
-.timeline-item::selection{
+/* .timeline-item::selection{
     
-}
+} */
 
 /* SCROLL Behaviour */
 @keyframes smoothscroll1 {
@@ -338,7 +338,8 @@ nav.navbar .nav-item:last-child {
     margin: 0px 3px;
 }
 footer{
-    padding-top: 2px;
+    padding-top: 1vh;
+    height: fit-content;
 }
 
 .footer ::-moz-selection {
@@ -355,11 +356,12 @@ footer{
     background-color: var(--col-gray);
     color: var(--col-main);
     transition: var(--transition-default);
-    margin-top: var(--space--large);
+    padding-top: calc(var(--space-micro)-3px);
     padding-bottom: var(--space-micro);
     margin-bottom: 0;
     text-align: center;
     text-decoration: none;
+    line-height: normal;
 }
 
 .footer p{

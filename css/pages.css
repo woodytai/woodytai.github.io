@@ -72,6 +72,9 @@
 
 .index-html-main{
   scroll-behavior: smooth;
+}
+
+.index-html-content{
   padding: 20px;
 }
 

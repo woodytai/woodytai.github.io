@@ -44,5 +44,5 @@ window.onload = function () {
 			.then(data => {
 				document.querySelector('.footer div p').textContent = data
 			})
-	}, 1000); 
+	}, 300); 
 };

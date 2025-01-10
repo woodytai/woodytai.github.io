@@ -106,88 +106,90 @@
                 </ul>
             </div>
         </div>
-        <div class="FAQContainer contact-primary" id="faq">
-            <h2>Frequently asked questions</h2>
-            <ul class="list">
-                <li class="listItem">
-                    <a class="listLink" href="#" onclick="toggleAnswer(event);">
-                        <span class="listTitle">Who are you?</span>
-                        <span class="listArrow">
-                            <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
-                        </span>
-                    </a>
-                    <div class="answer"><h6 class="off">Hi, I'm Woody. I'm a student specializing in biochemistry and computer science. I'm passionate about bridging the gap between biomedical sciences and technology, bringing a fresh perspective and industry knowledge. Nice to meet you!<br><br>Read more about me <a href="./about">here</a></h6></div>
-                </li>
-                <li class="listItem">
-                    <a class="listLink" href="#" onclick="toggleAnswer(event);">
-                        <span class="listTitle">What do you do?</span>
-                        <span class="listArrow">
-                            <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
-                        </span>
-                    </a>
-                    <div class="answer"><h6 class="off">I'm a learner at heart, currently pursuing a garden variety of projects in anything that intrests me. But if I were to pick one; Blending science with technology</h6></div>
-                </li>
-                <li class="listItem">
-                    <a class="listLink" href="#" onclick="toggleAnswer(event);">
-                        <span class="listTitle">How'd you summarise your life with just 3 sentences!</span>
-                        <span class="listArrow">
-                            <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
-                        </span>
-                    </a>
-                    <div class="answer"><h6 class="off"><ol><li>I was born and raised in Hong Kong.</li><li>Proudly qualified for the Hong Kong Team to international competitions(ISEF, IBCOL)</li><li>Passion in science and technology is building my dreams in <span>Diplomacy</span>, <span>Comp Sci</span> and <span>Biomedical Science</span></li></ol></h6></div>
-                </li>
-                <li class="listItem">
-                    <a class="listLink" href="#" onclick="toggleAnswer(event);">
-                        <span class="listTitle">Why are you interested in Diplomacy/IR?</span>
-                        <span class="listArrow">
-                            <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
-                        </span>
-                    </a>
-                    <!-- <div class="answer"><h6 class="off">I haven't always belived in the might of the pen until I saw the wave of anti-LGBTQ bills being passed across the world, thats when I truely understood the power of words — the power to potentially save or harm</b> generations to come.</h6></div> -->
-                    <div class="answer"><h6 class="off">Diplomacy and international Relations as a whole has taught me many skills that I still use today, whether that be resolving conflicts or understanding both sides of an argument because <i>no one</i>; <br> Absolutely NO ONE sees themselves as the 'bad guy'. Diplomacy also has the added benefit of prioritizing collaborative problem-solving rather than everyman for themselves, which is a skill I believe to be under utilised in today's society.</div>
-                </li>       
-            </ul>
-            <script>
-                function toggleAnswer(event) {
-                    event.preventDefault();
-                    const listItem = event.currentTarget.closest('.listItem');
-                    const allItems = document.querySelectorAll('.listItem');
-                    allItems.forEach(item => {
-                        if (item !== listItem) {
-                            item.classList.remove('active');
-                        }
-                    });
-                    listItem.classList.toggle('active');
-                }
-            </script>
-        </div>
-        <!-- <div class="content" style="margin-top: var(--space-small);">
-            <div>
-                <h2>Featured</h2>
-                <div class="featured-bar">
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/CFSS.png" alt="CFSS logo">
-                    </div>
-                    <div class="home-featured">
-                        <a href="./resume#HKAGE"><img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/HKAGE.png" alt="Hong Kong Academy for Gifted Education"></a>
-                    </div>
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/CFSS_Debate.png" alt="CFSS Debate logo">
-                    </div>
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/ComputerxRobotics.png" alt="CFSS Compouter and Robotics Club">
-                    </div>
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/HK-IBCOL.png" alt="Hong Kong Blockchain Olympiad">
-                    </div>
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/Medium.png" alt="Medium">
-                    </div>
-                    <div class="home-featured">
-                        <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/SLS@CUHK.png" alt="School of Life Science, CUHK">
-                    </div>
+        <div class="index-html-content">
+            <div class="FAQContainer contact-primary" id="faq">
+                <h2>Frequently asked questions</h2>
+                <ul class="list">
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">Who are you?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off">Hi, I'm Woody. I'm a student specializing in biochemistry and computer science. I'm passionate about bridging the gap between biomedical sciences and technology, bringing a fresh perspective and industry knowledge. Nice to meet you!<br><br>Read more about me <a href="./about">here</a></h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">What do you do?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off">I'm a learner at heart, currently pursuing a garden variety of projects in anything that intrests me. But if I were to pick one; Blending science with technology</h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">How'd you summarise your life with just 3 sentences!</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <div class="answer"><h6 class="off"><ol><li>I was born and raised in Hong Kong.</li><li>Proudly qualified for the Hong Kong Team to international competitions(ISEF, IBCOL)</li><li>Passion in science and technology is building my dreams in <span>Diplomacy</span>, <span>Comp Sci</span> and <span>Biomedical Science</span></li></ol></h6></div>
+                    </li>
+                    <li class="listItem">
+                        <a class="listLink" href="#" onclick="toggleAnswer(event);">
+                            <span class="listTitle">Why are you interested in Diplomacy/IR?</span>
+                            <span class="listArrow">
+                                <img class="cxicon" src="./images/logos/BW/arrowsign.svg" alt="Arrow Icon">
+                            </span>
+                        </a>
+                        <!-- <div class="answer"><h6 class="off">I haven't always belived in the might of the pen until I saw the wave of anti-LGBTQ bills being passed across the world, thats when I truely understood the power of words — the power to potentially save or harm</b> generations to come.</h6></div> -->
+                        <div class="answer"><h6 class="off">Diplomacy and international Relations as a whole has taught me many skills that I still use today, whether that be resolving conflicts or understanding both sides of an argument because <i>no one</i>; <br> Absolutely NO ONE sees themselves as the 'bad guy'. Diplomacy also has the added benefit of prioritizing collaborative problem-solving rather than everyman for themselves, which is a skill I believe to be under utilised in today's society.</div>
+                    </li>       
+                </ul>
+                <script>
+                    function toggleAnswer(event) {
+                        event.preventDefault();
+                        const listItem = event.currentTarget.closest('.listItem');
+                        const allItems = document.querySelectorAll('.listItem');
+                        allItems.forEach(item => {
+                            if (item !== listItem) {
+                                item.classList.remove('active');
+                            }
+                        });
+                        listItem.classList.toggle('active');
+                    }
+                </script>
             </div>
-        </div> -->
+            <!-- <div class="content" style="margin-top: var(--space-small);">
+                <div>
+                    <h2>Featured</h2>
+                    <div class="featured-bar">
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/CFSS.png" alt="CFSS logo">
+                        </div>
+                        <div class="home-featured">
+                            <a href="./resume#HKAGE"><img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/HKAGE.png" alt="Hong Kong Academy for Gifted Education"></a>
+                        </div>
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/CFSS_Debate.png" alt="CFSS Debate logo">
+                        </div>
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/ComputerxRobotics.png" alt="CFSS Compouter and Robotics Club">
+                        </div>
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/HK-IBCOL.png" alt="Hong Kong Blockchain Olympiad">
+                        </div>
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/Medium.png" alt="Medium">
+                        </div>
+                        <div class="home-featured">
+                            <img src="./images/static/SrTXEpXEUxDlzutHEBJrgcCDiLIQICSRcQwqyJXDyHYEsWJkJeUNHAtiRxbIvreEMspWKjESfVFCYrjTBNjpAWpryWkoNoJy/SLS@CUHK.png" alt="School of Life Science, CUHK">
+                        </div>
+                </div>
+            </div> -->
+        </div>
     </main>
     <div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
