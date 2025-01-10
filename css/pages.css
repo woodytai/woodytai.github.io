@@ -1,3 +1,49 @@
+/* Absolute image display */
+.image-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 0.2vh solid var(--col-gray);
+  padding: var(--space-micro);
+  box-shadow: 0 0 10px var(--col-off);
+  z-index: 9999;
+  max-width: 80vw;
+  max-height: 40vw;
+  overflow: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: var(--col-gray);
+  color: var(--col-main);
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.image-container img {
+  max-width: 80vw;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 120vw;
+  }
+
+  .close-btn {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+/*  */
+
 /*Error*/
 .errorcontainer {
   display: flex;
@@ -199,54 +245,12 @@
   padding: 30px;
 }
 
+
 #testimonial {
   margin-top: 100%;
   padding-bottom: 25%;
 }
 
-.image-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 0.2vh solid var(--col-gray);
-  padding: var(--space-micro);
-  box-shadow: 0 0 10px var(--col-off);
-  z-index: 9999;
-  max-width: 80vw;
-  max-height: 40vw;
-  overflow: auto;
-}
-
-.close-btn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-color: var(--col-gray);
-  color: var(--col-main);
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.image-container img {
-  max-width: 80vw;
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-}
-
-@media (max-width: 768px) {
-  .image-container {
-    width: 120vw;
-  }
-
-  .close-btn {
-    font-size: 18px;
-    padding: 8px 12px;
-  }
-}
 
 #CCA_Activity_Details_1 {
   transition: var(--transition-default);
@@ -284,32 +288,23 @@
   margin: 0;
 }
 
+/* Portfolio Re */
 .portfolio-review-card {
   margin: 0 15vw;
-  color: var(--col-main);
   padding: 5vw;
   border-radius: 8px;
   width: 60%;
   min-width: 300px;
   text-align: center;
   position: relative;
+  background-color: var(--col-off);
+  color: var(--col-main);
 }
 
-.portfolio-review-card ::-moz-selection {
-  color: var(--col-off);
-  background: var(--col-main);
-}
-
+.portfolio-review-card ::-moz-selection,
 .portfolio-review-card ::selection {
   color: var(--col-off);
   background: var(--col-main);
-}
-
-.portfolio-review-text {
-  min-height: 30vh;
-  font-size: 2.52em;
-  line-height: 2.6vh;
-  margin-bottom: 2.5vh;
 }
 
 .portfolio-header {
@@ -317,11 +312,19 @@
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 5vh;
+  color: yellow;
+}
+
+.portfolio-review-text {
+  min-height: 25vh;
+  font-size: 2.5vh;
+  line-height: 2.6vh;
+  color: var(--col-main);
 }
 
 .portfolio-reviewer-name {
   font-size: 2vh;
-  line-height: 2.4vh;
+  line-height: 2.1vh;
   color: var(--col-main);
 }
 
@@ -339,15 +342,15 @@
 }
 
 #prevButton {
-  margin-right: 15vw;
-  bottom: 0;
-  left: 0;
+    margin-right: 15vw;
+    bottom: 0;
+    left: 0;
 }
 
 #nextButton {
-  margin-left: 15vw;
-  bottom: 0;
-  left: 0;
+    margin-left: 15vw;
+    bottom: 0;
+    left: 0;
 }
 
 .page-indicators {
@@ -364,10 +367,94 @@
 }
 
 .page-indicator.active {
-  background-color: var(--col-off);
+  background-color: var(--col-gray-op);
 }
 
-/**/
+@media (max-width: 768px) {
+  .portfolio-review-card {
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  .portfolio-review-text {
+      font-size: 3.5vh;
+      line-height: 3.6vh;
+  }
+
+  .portfolio-header {
+      font-size: 2em;
+  }
+
+  .portfolio-reviewer-name {
+    font-size: 3.5vh;
+    line-height: 3.6vh;
+    color: var(--col-main);
+  }
+
+
+  .timeline-item {
+      width: 90%;
+      margin: 10px auto;
+      opacity: 1;
+  }
+
+  .timeline::before {
+      left: 10%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+      font-size: 1vh
+  }
+
+  .portfolio-prev-next-buttons {
+    justify-content: space-between;
+  }
+
+  .portfolio-prev-next-buttons button {
+    font-size: 3vh;
+    background-color: inherit;
+    color: var(--col-main);
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  #prevButton {
+    margin-right: 15vw;
+    bottom: 0;
+    left: 0;
+  }
+
+  #nextButton {
+    margin-left: 15vw;
+    bottom: 0;
+    left: 0;
+  }
+
+  .page-indicators {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: var(--col-gray);
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+
+  .page-indicator.active {
+    background-color: var(--col-gray-op);
+  }
+}
+
+
+/* ARTICLES */
 .articles_year {
   font-style: var(--font-second);
 }
@@ -698,53 +785,5 @@ th {
     /* Remove left margin */
     width: 100%;
     /* Full width for mobile */
-  }
-
-  .portfolio-review-card {
-    width: 90%;
-    /* Adjust width */
-    margin: 0 auto;
-    /* Centering */
-  }
-
-  .portfolio-review-text {
-    font-size: 1.5em;
-    /* Smaller font size */
-  }
-
-  .portfolio-header {
-    font-size: 1.5em;
-    /* Smaller font size */
-  }
-
-  .articles-card {
-    padding: 1vw;
-    /* Adjust padding for mobile */
-  }
-
-  .filter-row {
-    flex-direction: column;
-    /* Stack filter items */
-  }
-
-  .filter-row select {
-    width: 100%;
-    /* Full width for selections */
-    margin: 5px 0;
-    /* Space between items */
-  }
-
-  .timeline-item {
-    width: 90%;
-    /* Adjust width */
-    margin: 10px auto;
-    /* Centering */
-    opacity: 1;
-    /* Ensure full visibility */
-  }
-
-  .timeline::before {
-    left: 10%;
-    /* Adjust line position */
   }
 }

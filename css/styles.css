@@ -356,8 +356,8 @@ footer{
     background-color: var(--col-gray);
     color: var(--col-main);
     transition: var(--transition-default);
-    padding-top: calc(var(--space-micro)-3px);
-    padding-bottom: var(--space-micro);
+    padding-top: 0.5vh;
+    padding-bottom: 0.8vh;
     margin-bottom: 0;
     text-align: center;
     text-decoration: none;
