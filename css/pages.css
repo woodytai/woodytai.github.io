@@ -208,7 +208,20 @@
   margin-right: var(--space-medium);
   scroll-behavior: smooth;
   text-align: justify;
+}
 
+@media(max-width: 776px){
+  .About-Me-Txt h3 a{
+      color: var(--col-gray-op);
+      text-decoration-color: var(--col-asso);
+      text-decoration: none;
+      font-style: oblique;
+  }
+  .About-Me-Txt h3 a:hover, .About-Me-Txt h3 a:focus .About-Me-Txt h3 a:active{
+      transition: var(--transition-default);
+      color: var(--col-main);
+      padding: 0 2px 0 0.1vw;
+  }
 }
 
 .About-Me-Txt h3 {
@@ -221,6 +234,13 @@
 .Resume pre {
   margin-left: 10vw;
   font-family: var(--font-main);
+  white-space: break-spaces;
+}
+
+.resume-about-txt{
+  display: block;
+  text-align: -20px;
+  margin-left: 20px;
 }
 
 .Resume h2 a {
@@ -294,7 +314,7 @@
   padding: 5vw;
   border-radius: 8px;
   width: 60%;
-  min-width: 300px;
+  overflow: scroll;
   text-align: center;
   position: relative;
   background-color: var(--col-off);
@@ -318,7 +338,7 @@
 .portfolio-review-text {
   min-height: 25vh;
   font-size: 2.5vh;
-  line-height: 2.6vh;
+  line-height: 2.7vh;
   color: var(--col-main);
 }
 
@@ -371,14 +391,24 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio-header-space{
+    display: none;
+  }
   .portfolio-review-card {
-      width: 90%;
+      width: 85%;
+      height: 80vh;
       margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .portfolio-static-items{
+    margin-top: auto;
   }
 
   .portfolio-review-text {
-      font-size: 3.5vh;
-      line-height: 3.6vh;
+      font-size: 2.5vh;
+      line-height: 2.6vh;
   }
 
   .portfolio-header {
@@ -386,8 +416,8 @@
   }
 
   .portfolio-reviewer-name {
-    font-size: 3.5vh;
-    line-height: 3.6vh;
+    font-size: 2.5vh;
+    line-height: 2.6vh;
     color: var(--col-main);
   }
 

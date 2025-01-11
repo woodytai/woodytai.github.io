@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	function toggleMenu() {
 		const menu = document.querySelector('.menu');
 		menu.classList.toggle('show'); // Toggle the menu visibility
+		const main = document.querySelector('main').classList.add("ExpandedMenu")
 	}
 
 	// Function to close the menu when clicking outside
@@ -11,21 +12,22 @@ document.addEventListener('DOMContentLoaded', function () {
 		const menuToggle = document.querySelector('.menu-toggle');
 		if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
 			menu.classList.remove('show'); // Hide menu if clicked outside
+			const main = document.querySelector('main').classList.remove("ExpandedMenu")
 		}
 	}
 
 	// Create a menu toggle button
 	const menuToggle = document.createElement('div');
-	menuToggle.innerHTML = '☰'; // Hamburger icon
-	menuToggle.classList.add('menu-toggle'); // Add a class for styling
-	menuToggle.style.cursor = 'pointer'; // Change cursor to pointer
-	menuToggle.style.fontSize = '24px'; // Adjust icon size
+	menuToggle.innerHTML = '☰'; 
+	menuToggle.classList.add('menu-toggle'); 
+	menuToggle.style.cursor = 'pointer'; 
+	menuToggle.style.fontSize = '24px';
 
 	// Insert the menu toggle button before the menu
 	const header = document.querySelector('header');
 	const menu = document.querySelector('.menu');
 	header.insertBefore(menuToggle, menu); // Insert before the menu
-
+	
 	// Event listeners
 	menuToggle.addEventListener('click', toggleMenu); // Toggle menu on click
 	window.addEventListener('click', closeMenu); // Close menu on outside click

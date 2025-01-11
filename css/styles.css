@@ -19,10 +19,9 @@
     --col-main-op: var(--col-main-dark);
     --col-off-op: var(--col-off-dark);
     --col-gray-op: var(--col-gray-dark);
-    --font-sen: "Sen", serif;
     --font-main: "futura-pt", sans-serif;
-    --font-asso: "sans", serif;
-    --font-second: "grad", serif;
+    --font-asso: "Avro";
+    --font-second: "sans", serif;
     --space-header: 4.5%;
     --space-micro: 10px;
     --space-small: 3vh;
@@ -55,6 +54,11 @@
     --col-off-op: var(--col-off-bright);
     --col-main-op: var(--col-main-bright);
     --col-gray-op: var(--col-gray-bright);
+}
+
+@font-face {
+    font-family: "Arvo";
+    src: url(../docu/static/KiwOIiKx_fonts/Arvo.woff2);
 }
 
 
@@ -299,6 +303,7 @@ header {
 }
 
 nav {
+    font-family: var(--font-second);
     max-height: 10vh;
     display: flex;
     flex-wrap: wrap;
@@ -428,14 +433,22 @@ footer{
 }
 
 @media (max-width: 776px) {
+    .ExpandedMenu{
+        margin-top: 6vh;
+    }
     .content{
         margin: 15%;
     }
+
+    nav{
+        margin-top: 1vh;
+    }
+
     .menu {
+        margin-top: 1.2vh;
         padding: 0; 
-        padding-top: 30px;
         display: none; 
-        position: absolute; /* Positioning for dropdown */
+        position: absolute;
         background-color: var(--col-asso);
         width: 100%; 
         z-index: 10; 
@@ -444,13 +457,14 @@ footer{
     
     .menu.show {
         display: flex; 
-        padding-top: 5px;
+        padding-top: 30px;
     }
     
     .menu a {
         text-align: left; 
-        border-bottom: 1px solid var(--col-gray); 
-        color: var(--col-main); 
+        padding: 1px 5px;
+        margin: 1px 10px;
+        color: var(--col-gray-op); 
         text-decoration: none; 
         font-size: 20px;
     }
@@ -458,6 +472,10 @@ footer{
     .menu a:hover {
         background-color: var(--col-gray);
         color: var(--col-main);
+    }
+
+    .menu .menuselection{
+        text-decoration: none;
     }
 
 
