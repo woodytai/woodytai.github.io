@@ -29,8 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	header.insertBefore(menuToggle, menu); // Insert before the menu
 	
 	// Event listeners
-	menuToggle.addEventListener('click', toggleMenu); // Toggle menu on click
-	window.addEventListener('click', closeMenu); // Close menu on outside click
+	menuToggle.addEventListener('click', toggleMenu);
+	window.addEventListener('click', closeMenu); 
+	document.body.addEventListener('click', closeMenu, true); 
 });
 // 
 window.onload = function () {
