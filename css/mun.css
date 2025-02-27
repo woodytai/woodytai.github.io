@@ -1,0 +1,71 @@
+.article,
+article {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 20px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.article p,
+article p {
+  text-indent: 10px;
+  font-family: 'Times New Roman', serif;
+  font-size: 2vh;
+  text-align: justify;
+  line-height: 2;
+}
+
+article q {
+  font-style: oblique;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.articlecentered {
+  margin-top: 17px;
+  text-align: center;
+  text-indent: 0;
+  margin-bottom: 15px;
+}
+
+.articleheader {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.articleinfo {
+  text-align: left;
+  text-indent: 0;
+  margin-bottom: 15px;
+  font-family: 'Courier New', serif;
+}
+
+span {
+  font-weight: bold;
+}
+
+blockquote {
+  margin-top: 17px;
+  text-align: center;
+  text-indent: 0;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+
+.article h5 {
+  font-family: 'Montserrat', serif;
+  font-size: 20vh;
+}
+
+.article h4 {
+  font-family: 'Montserrat', serif;
+  font-size: 20px;
+}
