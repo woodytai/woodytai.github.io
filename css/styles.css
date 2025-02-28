@@ -11,14 +11,11 @@
     --col-gray-dark: #828282;
     --col-blue-dark: #acacff;
 
-    
-
-
     --col-generic-special-spanlight-bright: #08c4b0;
     --col-generic-special-spanlight-dark: #045a51;
     --col-generic-special-highlight-bright: #558ed8;
     --col-generic-special-highlight-dark: #002856;
-    
+
     --col-main: var(--col-main-bright);
     --col-off: var(--col-off-bright);
     --col-asso: var(--col-asso-bright);
@@ -28,8 +25,10 @@
     --col-main-op: var(--col-main-dark);
     --col-off-op: var(--col-off-dark);
     --col-gray-op: var(--col-gray-dark);
-    --col-generic-special-spanlight: var(--col-generic-special-spanlight-bright);
+    --col-generic-special-span: var(--col-generic-special-spanlight-bright);
+    --col-generic-special-span-op: var(--col-generic-special-spanlight-dark);
     --col-generic-special-highlight: var(--col-generic-special-highlight-bright);
+    --col-generic-special-highlight-op: var(--col-generic-special-highlight-dark);
     --font-main: "futura-pt", sans-serif;
     --font-asso: "Avro";
     --font-second: "sans", serif;
@@ -39,7 +38,7 @@
     --space-medium: 7%;
     --space-large: 10%;
     --space-xlarge: 15vh;
-    --line-height:1.5em ;
+    --line-height: 1.5em;
     --line-height-small: 1em;
     --line-height-large: 2vh;
     --transition-default: all 0.3s ease-in-out;
@@ -66,8 +65,10 @@
     --col-main-op: var(--col-main-bright);
     --col-gray-op: var(--col-gray-bright);
 
-    --col-generic-special-spanlight: var(--col-generic-special-spanlight-dark);
+    --col-generic-special-span: var(--col-generic-special-spanlight-dark);
+    --col-generic-special-span-op: var(--col-generic-special-spanlight-bright);
     --col-generic-special-highlight: var(--col-generic-special-highlight-dark);
+    --col-generic-special-highlight-op: var(--col-generic-special-highlight-bright);
 }
 
 @font-face {
@@ -81,11 +82,11 @@ html ::selection {
     background: var(--col-off);
 }
 
-.listItem .answer ::selection{
+.listItem .answer ::selection {
     background: var(--col-off);
 }
 
-#testimonials ::selection{
+#testimonials ::selection {
     background: var(--col-off-op);
 }
 
@@ -94,7 +95,7 @@ nav ::selection {
     background: var(--col-gray);
 }
 
-.FAQContainer ::selection{
+.FAQContainer ::selection {
     background: var(--col-blue-op);
     color: var(--col-gray-op);
 }
@@ -105,21 +106,30 @@ nav ::selection {
 
 /* SCROLL Behaviour */
 @keyframes smoothscroll1 {
-    from, to { scroll-behavior: smooth; }
-  }
-  
-  @keyframes smoothscroll2 {
-    from, to { scroll-behavior: smooth; }
-  }
-  
-  html {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+@keyframes smoothscroll2 {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+html {
     animation: smoothscroll1 1s;
-  }
-  
-  html:focus-within {
+}
+
+html:focus-within {
     animation-name: smoothscroll2;
     scroll-behavior: smooth;
-  }
+}
+
 /* html{
     scroll-behavior: smooth !important;
 }
@@ -136,7 +146,8 @@ html:focus-within {
 
 /*  */
 
-html, body {
+html,
+body {
     background-color: var(--col-asso);
     color: var(--col-main);
     font-family: var(--font-main);
@@ -158,7 +169,10 @@ body {
 }
 
 
-h1, h2, h4, h5{
+h1,
+h2,
+h4,
+h5 {
     transition: var(--transition-default);
     color: var(--col-main);
 }
@@ -174,7 +188,8 @@ h1 {
     text-align: center;
 }
 
-h2, h2 a {
+h2,
+h2 a {
     line-height: var(--line-height);
     margin: 22px 0 1px;
     padding: 0;
@@ -191,13 +206,17 @@ h3 {
     margin: 0 15px 0 0;
 }
 
-h1 a, a{
+h1 a,
+a {
     transition: var(--transition-default);
     color: var(--col-gray);
     text-decoration: none;
 }
 
-h1 a:hover, a:hover, h1 a:focus, a:focus {
+h1 a:hover,
+a:hover,
+h1 a:focus,
+a:focus {
     color: var(--col-main);
     text-decoration: underline;
 }
@@ -211,21 +230,22 @@ h3 a {
     padding: 0 2px 0 0.1vw;
 }
 
-h3 a:hover, h3 a:focus {
+h3 a:hover,
+h3 a:focus {
     transition: var(--transition-default);
     color: var(--col-gray);
     text-decoration: none;
     padding: 0 0.1vw 0 0.15vw;
 }
 
-h6{
+h6 {
     transition: var(--transition-default);
     font: var(--font-main);
     font-weight: inherit;
     line-height: inherit;
 }
 
-h6 a{
+h6 a {
     transition: var(--transition-default);
     color: var(--col-blue);
 }
@@ -236,7 +256,7 @@ h6 a:hover {
     text-decoration: 2px solid underline var(--col-blue);
 }
 
-h6 button{
+h6 button {
     transition: var(--transition-default);
     color: var(--col-blue);
 }
@@ -261,18 +281,19 @@ h5 {
     margin-bottom: 0;
 }
 
-p{
+p {
     color: var(--col-main);
     transition: var(--transition-default);
     font: var(--font-main);
     margin-bottom: var(--space-small);
 }
 
-span{
-    color: var(--col-generic-special-spanlight);
+span {
+    color: var(--col-generic-special-span);
+    font-family: var(--font-asso);
 }
 
-button{
+button {
     border-style: none;
 }
 
@@ -294,7 +315,7 @@ header {
     margin: auto;
 }
 
-.menu{
+.menu {
     display: flex;
     font-style: normal;
     color: var(--col-gray);
@@ -304,20 +325,22 @@ header {
     padding: 0 15px;
 }
 
-.menu .menuselection{
+.menu .menuselection {
     text-decoration: underline;
     text-decoration-color: var(--col-main-dark);
     color: var(--col-main);
 }
 
-.menu a{
+.menu a {
     font-style: normal;
     color: var(--col-gray);
     text-align: center;
     padding: 0 15px;
     text-decoration: none;
 }
-.menu a:hover, .menu a:focus {
+
+.menu a:hover,
+.menu a:focus {
     color: var(--col-main);
 }
 
@@ -361,19 +384,21 @@ nav.navbar .nav-item:last-child {
     padding: 0px 6px;
     margin: 0px 3px;
 }
-footer{
+
+footer {
     padding-top: 1vh;
     height: fit-content;
 }
 
-.footer ::-moz-selection {
-  color: var(--col-gray);
-  background: var(--col-main);
+.footer ::-moz-selection, .footer ::selection {
+    color: var(--col-gray-op);
+    background: var(--col-main);
 }
 
-.footer ::selection {
-  color: var(--col-gray);
-  background: var(--col-main);
+.footer a:hover{
+    color: var(--col-generic-special-span-op);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .footer {
@@ -388,12 +413,12 @@ footer{
     line-height: normal;
 }
 
-.footer p{
+.footer p {
     margin-bottom: 0px;
     padding-bottom: 8px;
 }
 
-.content{
+.content {
     min-height: 100%;
     justify-content: center;
     transition: var(--transition-default);
@@ -402,12 +427,13 @@ footer{
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
     min-width: 160px;
     margin-top: 2%;
     z-index: 1;
 }
+
 .dropdown-content a {
     color: var(--col-main);
     padding: 8px 8px;
@@ -415,25 +441,29 @@ footer{
     background-color: var(--col-gray);
 }
 
-.dropdown-content .menuselection{
+.dropdown-content .menuselection {
     background-color: var(--col-gray-op);
 }
 
-.dropdown-content a:hover {background-color: var(--col-gray-op);}
+.dropdown-content a:hover {
+    background-color: var(--col-gray-op);
+}
+
 .show {
     display: block;
     padding: 0;
 }
 
 
-.special-notes{
-    border-bottom: 1px dashed rgb(32,33,36);
+.special-notes {
+    border-bottom: 1px dashed rgb(32, 33, 36);
     text-decoration: none;
     position: relative;
 }
 
 .tooltip {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: absolute;
     background-color: rgba(0, 0, 0, 0.75);
     color: white;
@@ -444,7 +474,7 @@ footer{
     z-index: 10;
 }
 
-.special-highlight1{
+.special-highlight1 {
     background-color: var(--col-generic-special-highlight);
     min-height: 50svh;
     padding: 2vh 2vw;
@@ -456,52 +486,53 @@ footer{
 
 /* Mobile Styles */
 .menu-toggle {
-    display: none; 
+    display: none;
 }
 
 @media (max-width: 776px) {
-    .ExpandedMenu{
+    .ExpandedMenu {
         margin-top: 6vh;
     }
-    .content{
+
+    .content {
         margin: 15%;
     }
 
-    nav{
+    nav {
         margin-top: 1vh;
     }
 
     .menu {
         margin-top: 1.2vh;
-        padding: 0; 
-        display: none; 
+        padding: 0;
+        display: none;
         position: absolute;
         background-color: var(--col-asso);
-        width: 100%; 
-        z-index: 10; 
-        
+        width: 100%;
+        z-index: 10;
+
     }
-    
+
     .menu.show {
-        display: flex; 
+        display: flex;
         padding-top: 30px;
     }
-    
+
     .menu a {
-        text-align: left; 
+        text-align: left;
         padding: 1px 5px;
         margin: 1px 10px;
-        color: var(--col-gray-op); 
-        text-decoration: none; 
+        color: var(--col-gray-op);
+        text-decoration: none;
         font-size: 20px;
     }
-    
+
     .menu a:hover {
         background-color: var(--col-gray);
         color: var(--col-main);
     }
 
-    .menu .menuselection{
+    .menu .menuselection {
         text-decoration: none;
     }
 
@@ -511,7 +542,7 @@ footer{
         margin: 10px;
         font-size: 24px;
     }
-    
+
     header {
         position: relative;
     }

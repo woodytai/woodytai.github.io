@@ -161,82 +161,139 @@
   }
 }
 
-/*  */
-.About-Me-Txt {
-  font-size: 1.2em;
-  line-height: 1.25em;
-  margin-left: var(--space-medium);
-  margin-right: var(--space-medium);
-  scroll-behavior: smooth;
-  text-align: justify;
-}
+/* About */
 
-@media(max-width: 776px) {
-  .About-Me-Txt{
-    margin: 0;
-  }
-  .About-Me-Txt h3 a {
-    color: var(--col-gray-op);
-    text-decoration-color: var(--col-asso);
-    text-decoration: none;
-    font-style: oblique;
-  }
-
-  .About-Me-Txt h3 a:hover,
-  .About-Me-Txt h3 a:focus .About-Me-Txt h3 a:active {
-    transition: var(--transition-default);
-    color: var(--col-main);
-    padding: 0 2px 0 0.1vw;
-  }
-}
-
-.About-Me-Txt h3 {
-  text-indent: 30px;
-  padding: 1em 0;
-}
-
-.About-Me-Flex-Top {
-  display: flex;
-  flex-direction: row;
-  overflow-wrap: normal;
-}
-
-.About-Me-Flex-Facts-FLEX {
-  right: 0;
-  margin-left: 2vw;
+.About-Me-QuickFact-Main {
   display: flex;
   flex-wrap: wrap;
-  max-width: 35%;
+  gap: 4vw;
 }
 
-.About-Me-Flex-Facts-FLEX td{
-  width: 50%;
-  border: 0;
-  background-color: var(--col-generic-special-spanlight);
-  border-radius: 5px;
+.About-Me-QuickFact-Sub {
+  flex: 1;
+  min-width: 0.25vw;
 }
 
-@media (max-width: 776px) {
-  .About-Me-Flex-Top {
+.About-Me-QuickFact ul {
+  list-style: none;
+}
+
+.About-Me-QuickFact li {
+  font-size: 1.1em;
+  margin-bottom: 1.5dvh;
+  position: relative;
+  padding-left: 20px;
+}
+
+.About-Me-QuickFact li::before {
+  content: '✔';
+  position: absolute;
+  left: -5px;
+  color: var(--col-off-bright);
+}
+
+.About-Me-QuickFact a {
+  color: var(--col-main);
+  text-decoration: underline;
+}
+
+.About-Me-QuickFact a:hover {
+  color: var(--col-gray);
+  text-decoration: none;
+}
+
+.About-Me-Journey h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.About-Me-Journey a {
+  color: var(--col-gray-op);
+}
+
+.About-Me-Journey-Main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.About-Me-Journey-Sub {
+  flex: 1;
+}
+
+.About-Me-Journey-Sub p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  text-indent: 1vw;
+  margin: 5%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .About-Me-Journey-Main {
     flex-direction: column;
-    text-align: left;
   }
-  .About-Me-Flex-Facts-FLEX{
-    max-width: 100%;
-    margin: 1vh 0 0 0;
+
+  .About-Me-QuickFact-Sub {
+    flex: auto;
   }
-  .About-Me-Txt h2, .About-Me-Txt h3{
-    margin: 0 15px;
+
+  .About-Me-QuickFact-Main {
+    gap: 0;
   }
-  .grid {
-      width: 100%; /* Full width on smaller screens */
+
+  .About-Me-QuickFact ul {
+    padding: 0 2vw;
   }
-  .grid-item {
-      height: 80px; /* Adjust height for smaller screens */
+
+  #About-Me-Heading {
+    margin-bottom: 1svh;
   }
 }
 
 /* Resume */
+
+.Resume-Introductory-Main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4vw;
+}
+
+.Resume-Introductory-Sub {
+  flex: 1;
+  min-width: 0.25vw;
+}
+
+.Resume-Introductory ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .Resume-Introductory-Sub {
+    flex: auto;
+  }
+
+  .Resume-Introductory-Main {
+    gap: 0;
+  }
+
+  .Resume-Introductory ul {
+    padding: 0 2vw;
+  }
+}
 
 .Resume pre {
   margin-left: 10vw;
@@ -325,7 +382,6 @@
   text-align: center;
   position: relative;
   background-color: var(--col-off);
-  color: var(--col-main);
 }
 
 .portfolio-review-card ::-moz-selection,
