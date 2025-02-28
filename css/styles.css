@@ -2,6 +2,8 @@
 :root {
     --col-main-bright: #000000;
     --col-asso-bright: hsl(0, 3%, 93%);
+    --col-elevate-bright: #e6e5e5;
+    --col-elevate-dark: #3b3b3b;
     --col-off-bright: #fe8c0d;
     --col-gray-bright: #BDBDBD;
     --col-blue-bright: #7a7aff;
@@ -11,12 +13,13 @@
     --col-gray-dark: #828282;
     --col-blue-dark: #acacff;
 
-    --col-generic-special-spanlight-bright: #08c4b0;
-    --col-generic-special-spanlight-dark: #045a51;
+    --col-generic-special-spanlight-bright: #045a51;
+    --col-generic-special-spanlight-dark: #08c4b0;
     --col-generic-special-highlight-bright: #558ed8;
     --col-generic-special-highlight-dark: #002856;
 
     --col-main: var(--col-main-bright);
+    --col-elevate: var(--col-elevate-bright);
     --col-off: var(--col-off-bright);
     --col-asso: var(--col-asso-bright);
     --col-gray: var(--col-gray-bright);
@@ -54,6 +57,7 @@
 /* Dark Mode Styles */
 .dark-mode {
     --col-main: var(--col-main-dark);
+    --col-elevate: var(--col-elevate-dark);
     --col-asso: var(--col-asso-dark);
     --col-gray: var(--col-gray-dark);
     --col-blue: var(--col-blue-dark);

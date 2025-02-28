@@ -46,6 +46,7 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/pages.css">
     <script src="./js/script.js"></script>
+    <script src="./js/filter.js"></script>
 </head>
 <body>
     <header>
@@ -80,9 +81,9 @@
                     </script>
                 </div>
                 <a href="contact">Contact Me</a>
+                <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
             </nav>
         </div>
-            <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
   </header>
 
     <div class="content" style="margin-top: var(--space-small);">
@@ -116,6 +117,9 @@
             <button class="articles-filter-button" data-filter="school">School News</button>
 
             <button class="articles-filter-button" data-filter="misc">Other</button>
+
+            <input oninput="filterHTML('.articles-cards-container', '.articles-card', this.value)"
+            placeholder="Search for mentions...">
           </div>
           <div class="articles-cards-container">
             <!-- <div class="articles-card" data-type="">

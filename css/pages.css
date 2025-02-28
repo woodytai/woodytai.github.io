@@ -263,7 +263,6 @@ img {
 .Resume-Introductory-Main {
   display: flex;
   flex-wrap: wrap;
-  gap: 4vw;
 }
 
 .Resume-Introductory-Sub {
@@ -290,8 +289,8 @@ img {
     gap: 0;
   }
 
-  .Resume-Introductory ul {
-    padding: 0 2vw;
+  .Resume-Introductory-Sub ul {
+    margin: 0;
   }
 }
 
@@ -372,6 +371,45 @@ img {
   margin: 0;
 }
 
+.Resume-Courses-Main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1vw;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1vh 1vw; 
+}
+.Resume-Courses-Sub {
+  background-color: var(--col-elevate);
+  border-radius: 8px;
+  box-shadow: 0 2px 3px var(--col-gray-op);
+  padding: 1vw;
+  width: calc(33.333% - 1vw);
+  text-align: center;
+  box-sizing: border-box;
+}
+.Resume-Courses-ID {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.Resume-Courses-desc {
+  margin-top: 0.3vh;
+  color: var(--col-gray-op);
+}
+
+@media (max-width: 768px) {
+  .Resume-Courses-Sub {
+      width: calc(50% - 1vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .Resume-Courses-Sub {
+      width: 100%; 
+  }
+}
+
 /* Portfolio Re */
 .portfolio-review-card {
   margin: 0 15vw;
@@ -381,7 +419,7 @@ img {
   overflow: scroll;
   text-align: center;
   position: relative;
-  background-color: var(--col-off);
+  background-color: var(--col-gray);
 }
 
 .portfolio-review-card ::-moz-selection,
@@ -395,7 +433,7 @@ img {
   font-weight: bold;
   margin-bottom: 1rem;
   line-height: 5vh;
-  color: yellow;
+  color: rgb(216, 216, 0);
 }
 
 .portfolio-review-text {
@@ -444,7 +482,7 @@ img {
 .page-indicator {
   width: 10px;
   height: 10px;
-  background-color: var(--col-gray);
+  background-color: var(--col-off-dark);
   border-radius: 50%;
   margin: 0 5px;
 }
@@ -829,8 +867,15 @@ th {
 }
 
 #cca_download {
-  background-color: var(--col-blue);
-  color: var(--col-asso);
+  background-color: var(--col-off);
+  color: var(--col-main);
+  margin: var(--space-small);
+}
+
+@media (max-width: 768px) {
+  #cca_download{
+    margin: 0;
+  }
 }
 
 /* MOBILE SUPPORT */
