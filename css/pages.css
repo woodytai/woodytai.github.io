@@ -260,6 +260,47 @@ img {
 
 /* Resume */
 
+.Generic-Resume-Header-Main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Generic-Resume-Header-Sub {
+  flex: 1;
+  min-width: 0.33vw;
+}
+
+.Generic-Resume-Header-Sub ul{
+  list-style: none;
+}
+
+.Generic-Resume-Header-Sub ul a, .Generic-Resume-Header-Sub ul span{
+  color: var(--col-main);
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .Generic-Resume-Header-Main {
+    gap: 0;
+  }
+
+  .Generic-Resume-Header-Sub {
+    flex: auto;
+    width: calc(50% - 1vw);
+  }
+}
+
+@media (max-width: 480px) {
+  .Generic-Resume-Header-Sub {
+    width: 100%; 
+  }
+}
+
+#honors{
+  background-color: var(--col-elevate);
+  padding: 5%;
+}
+
 .Resume-Introductory-Main {
   display: flex;
   flex-wrap: wrap;
@@ -280,9 +321,10 @@ img {
   border-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .Resume-Introductory-Sub {
     flex: auto;
+    width: calc(50% - 1vw);
   }
 
   .Resume-Introductory-Main {
@@ -291,6 +333,16 @@ img {
 
   .Resume-Introductory-Sub ul {
     margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #honors{
+    background-color: var(--col-asso);
+    padding: 0;
+  }
+  .Resume-Introductory-Sub {
+    width: 100%; 
   }
 }
 
@@ -383,7 +435,7 @@ img {
 .Resume-Courses-Sub {
   background-color: var(--col-elevate);
   border-radius: 8px;
-  box-shadow: 0 2px 3px var(--col-gray-op);
+  box-shadow: 0 2px 3px var(--col-gray-dark);
   padding: 1vw;
   width: calc(33.333% - 1vw);
   text-align: center;
@@ -407,6 +459,9 @@ img {
 @media (max-width: 480px) {
   .Resume-Courses-Sub {
       width: 100%; 
+      background-color: var(--col-gray);
+      box-shadow: none;
+      margin: 3px;
   }
 }
 
