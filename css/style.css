@@ -1,0 +1,234 @@
+:root {
+  --col-main-bright: #ffffff;
+  --col-asso-bright: #12173f;
+  --col-gray-bright: #828282;
+  --col-blue-bright: #4a5368;
+
+  --col-main-dark: #000000;
+  --col-asso-dark: #70738b;
+  --col-gray-dark: #BDBDBD;
+  --col-blue-dark: #7a7aff;
+
+  --col-main: var(--col-main-bright);
+  --col-asso: var(--col-asso-bright);
+  --col-gray: var(--col-gray-bright);
+  --col-blue: var(--col-blue-bright);
+  --col-blue-op: var(--col-blue-dark);
+  --rect: invert(100%) sepia(0%) saturate(224%) hue-rotate(166deg) brightness(104%) contrast(102%);
+  --containers-main: 65%;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  --col-main: var(--col-main-dark);
+  --col-asso: var(--col-asso-dark);
+  --col-gray: var(--col-gray-dark);
+  --col-blue: var(--col-blue-dark);
+  --col-blue-op: var(--col-blue-bright);
+}
+
+body {
+  margin: 5vh 0 0 0;
+  color: var(--col-main);
+  background-color: var(--col-asso);
+  /* background-image: url(../images/static/Jd2Gf1_background/1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1; */
+}
+
+.landing1{
+  height: 77vh;
+}
+
+.landing1 {
+  padding: 0 30%;
+}
+
+.header {
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari */
+  top: 0;
+  margin: 1vh 1vw;
+}
+
+#favicon-page {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+  /* Smooth transition for opacity */
+}
+
+#favicon-page.hidden {
+  opacity: 0;
+  /* Make the image invisible */
+}
+
+.landing-image-container {
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.landing-image-container:hover {
+  transform: scale(1.05);
+}
+
+.landing-links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3vh;
+}
+
+#landing-container-a,
+#landing-container-b,
+#landing-container-c {
+  background-color: var(--col-blue);
+  padding: 2vh;
+  font-size: 2.5vh;
+  color: var(--col-main);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.landing-links-container ::-moz-selection {
+  color: var(--col-asso);
+  background-color: var(--col-main);
+}
+
+.landing-links-container ::selection {
+  color: var(--col-asso);
+  background-color: var(--col-main);
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 2.8vh;
+  line-height: 3vh;
+}
+
+footer ::-moz-selection {
+  color: var(--col-asso);
+  background-color: var(--col-main);
+}
+
+footer ::selection {
+  color: var(--col-asso);
+  background-color: var(--col-main);
+}
+
+h3 a {
+  transition: var(--transition-default);
+  color: var(--col-main);
+  text-decoration-color: var(--col-main);
+  line-height: inherit;
+  text-decoration: underline;
+  padding: 0 0.15vw 0 0.1vw;
+}
+
+h3 a:hover,
+h3 a:focus {
+  transition: var(--transition-default);
+  color: var(--col-gray);
+  text-decoration: none;
+  padding: 0 0.1vw 0 0.15vw;
+}
+
+.landing-container-dft:hover {
+  animation: pop 0.5s forwards;
+  transform: scale(1.01);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+.landing-container-dft {
+  width: var(--containers-main);
+  max-width: 500px;
+}
+
+.landing-container-dft ::-moz-selection {
+  color: var(--col-main);
+  background-color: var(--col-main);
+}
+
+.landing-container-dft ::selection {
+  color: var(--col-main);
+  background-color: var(--col-main);
+}
+
+
+.landing-links-container a:hover {
+  border: 1.2px solid white;
+  background-color: transparent;
+}
+
+.landing-container {
+  padding: 0.3vh 16px;
+  font-size: 200%;
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-container a {
+  height: 6vh;
+  width: 6vh;
+}
+
+.rect {
+  fill: var(--col-main);
+  filter: var(--rect);
+}
+
+.landing-container i {
+  padding: 0.5vw;
+  transition: color 0.5s ease;
+}
+
+.landing-container i:hover {
+  color: var(--col-gray);
+  transform: scale(1.1);
+}
+
+@media (max-width: 611px) {
+  .landing-container-dft {
+    width: 70%;
+  }
+
+  .landing1 {
+    padding: 0 5%;
+  }
+
+  .landing-container{
+    justify-content: space-around;
+    align-items: center;  
+  }
+}
+

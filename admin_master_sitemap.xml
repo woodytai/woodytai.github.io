@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://woodytai.github.io/</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/404</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.0</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/linktree</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.95</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/about</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/resume</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/articles</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/media</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/contact</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/writings/Perfectionism</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/writings/Who%20Am%20I</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/writings/Pfc2A_Favourite%20Quote</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/writings/Pf3Fd_Smile</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/writings/Pfu1F_Friend?</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://woodytai.github.io/admin/crawling-terms.html</loc>
+  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.1</priority>
+</url>
+
+
+</urlset>

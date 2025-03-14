@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <meta charset="utf-8">
+  <meta content="notranslate">
+  <link rel="icon" href="../images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <meta name="keywords" content="Woody Tai, Articles, Publications, Coverage, Mentions">
+  <meta name="author" content="Woody Tai">
+  <meta property="og:image" content="../images/logos/SharingImage.png">
+
+  <meta name="twitter:description" content="Writings by Woody Tai">
+  <meta name="twitter:image" content="../images/logos/SharingImage.png">
+  <link rel="stylesheet" type="text/css" href="../css/writings.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../"><img class="logo" alt="Woody_Tai_logo" src="../images/logos/WoodyTai.png" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <a href="../about">About Me</a>
+        <a href="../resume">Resume</a>
+        <div style="margin: 0; padding: 0; height: 0;">
+          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
+          <div class="dropdown-content">
+            <a href="../articles" class="menuselection">My Writings</a>
+            <a href="../media">Media Coverage</a>
+          </div>
+          <script>
+            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
+              event.preventDefault();
+              const dropdown = document.querySelector('.dropdown-content');
+              dropdown.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function (event) {
+              if (!event.target.matches('.AM_dropdown')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                  dropdown.classList.remove('show');
+                });
+              }
+            });
+          </script>
+        </div>
+        <a href="../contact">Contact Me</a>
+      </nav>
+    </div>
+    <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+  </header>
+
+  <div class="content" style="margin-top: var(--space-small);">
+    <main>
+      <article>
+        <div class="articleheader">
+          <strong>Tai, Cho Fung Woody</strong>
+        </div>
+        <div class="articleinfo">
+          <p><span>Woody Tai</span></p>
+          <p>Date: <span>17 SEP</span></p>
+        </div>
+        <hr>
+      </article>
+      <article>
+
+        <head>
+          <title>Woody Tai's Writings(Personal) — Smile?</title>
+          <meta property="og:title" content="Woody Tai's Writings(Personal) — Grief behind a smile">
+          <meta name="twitter:title" content="Woody Tai's Writings(Personal) — Grief behind a smile">
+          <meta name="description" property="og:description" itemprop="description"
+            content="How my smile turned from positivity to my curse">
+          <meta name="twitter:card" content="Grief behind a smile">
+        </head>
+        <h2 alt="Title">Grief behind a smile</h2>
+        <p class="articlecentered" alt="Title">Grief behind a smile</p>
+        <p><q>Boys don't cry</q> It might be sexist but growing up in Hong Kong meant that I was in a society where
+          stoicism is part of the culture. My parents and so many before them were always told that showing
+          vulnerability was a weakness. My parents tried to distance me from that mentality, but with relatives and
+          friends, it became hard. </p>
+
+        <p>I was complimented by my teachers <small>(at least according to my mom)</small> because of how I'd always
+          smile, which growing up, slowly developed into this image that no matter the challenge I faced, whenever there
+          were difficulties whether from academic strides to adolescence dreams — I needed to smile through it all. </p>
+
+        <p>This slowly morphed into <q>If I smiled, no one would pry or ask!</q> because deep down I knew that if
+          someone looked me in the eye and asked <q>Are you ok?</q> I'd break down on the spot. This facade became my
+          shield, protecting me from the discomfort of other's potential reactions. </p>
+
+        <br>
+        <blockquote>I worried that if I revealed even an ounce of sadness, I might lose all the potential in other's
+          eyes that I so dearly want. <small>After all who wants to be seen as needy and moody, right?</small>
+        </blockquote><br>
+
+        <p>As I navigated my confused teenage years, this seemed to finally set in and almost forced me to conform to
+          this society's 'norm' to fit in. The more I looked at my peers who seemed to handle hurdles easily, the more I
+          buried my emotions. </p>
+
+        <p>Now onto a bit of a psych lesson, you can't choose to only feel some emotions, it was mostly black and white,
+          meaning, You can't just bury sadness, you have to bury every emotion on the face of this earth, which thinking
+          back was really toxic. </p>
+        <blockquote>□</blockquote>
+        <p>Yet I still buried my emotions like it was every Tuesday, the more they built up. Like a dam with the water
+          level rising by the day, eventually leading to the uncontrolled release of impounded emotions, rushing over my
+          body like ants crawling all over, everything seemed to spin and my heart went into overdrive. As every single
+          emotion I've repressed floods out, a melting pot of insecurities and emotions washes over me, but not as
+          gentle waves but rather as a tsunami with hundreds of feet worth of water overwhelming every sense of my body,
+          my palace I so dearly fought for, where every single insecurity is amplified and examined. </p>
+        <blockquote>□</blockquote>
+        <p>After 2 years of living as if I was on a roller-coaster, thinking <q>Thank god, they didn't realise how
+            stressed I was</q> or <q>Phew, thank god they didn't ask about me!</q> and the next moment judging myself as
+          if I was a saint and demanded perfection, looking over every flaw and mistake I have. </p>
+
+        <p>Now I take a different approach, I still have the dam sitting there, just not releasing it when it inevitably
+          breaks, but rather when I have a moment to wind down and take a peek into who I really am. </p>
+      </article>
+
+      <main>
+  </div>
+  <div class="footer">
+    <div>
+      <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+      <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a>
+      <p> © 2024 Woody TAI </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.classList.add(savedMode);
+    }
+  });
+</script>

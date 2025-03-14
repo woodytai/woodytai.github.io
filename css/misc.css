@@ -1,0 +1,227 @@
+.centrered {
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.code_formatting,
+code {
+    color: var(--col-gray-bright);
+    font-family: monospace;
+    font-style: italic;
+    background-color: var(--col-off);
+    ;
+}
+
+@media (min-width: 100vw) {
+    header {
+        flex-wrap: nowrap;
+        /* Prevent wrapping if total width exceeds viewport width */
+        overflow-x: auto;
+        /* Add horizontal scrolling if necessary */
+    }
+}
+
+nav .nav-item {
+    margin-right: 25px;
+}
+
+nav.navbar .nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Additional Styles */
+.select {
+    color: var(--col-main);
+}
+
+.mode-switch {
+    text-align: center;
+    transition: var(--transition-default);
+    cursor: none;
+    border: 1px solid var(--col-gray);
+    background: var(--col-asso);
+    line-height: 1.3;
+    color: var(--col-asso);
+    border-radius: 3px;
+    padding: 0px 3px;
+    margin: 0px 6px;
+}
+
+.mode-switch:hover {
+    border: 2px solid var(--col-blue);
+    background: var(--col-main);
+    line-height: 1.6;
+    color: var(--col-asso);
+    border-radius: 10px;
+    margin: 0px 3px;
+    padding: 0px 6px;
+    border: 6px var(--col-grey);
+    background: var(--col-main);
+}
+
+footer {
+    padding-top: 1vh;
+}
+
+.footer {
+    padding-top: auto;
+    padding-bottom: var(--space-micro);
+    margin-bottom: 0;
+    background-color: var(--col-gray);
+    color: var(--col-main);
+    transition: var(--transition-default);
+    text-align: center;
+    text-decoration: none;
+}
+
+.content {
+    min-height: 50vh;
+    justify-content: center;
+    text-align: justify;
+    transition: var(--transition-default);
+    margin: var(--space-medium);
+    line-height: 1.3;
+}
+
+.footer {
+    margin-top: var(--space--large);
+}
+
+.footer p {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.footer_box {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+table {
+    border: solid var(--col-main);
+    width: 75vw;
+}
+
+tr,
+td {
+    border: solid var(--col-main);
+    padding: 1.2vh 0.2vw;
+}
+
+.quote {
+    max-width: 46vw;
+}
+
+.source {
+    max-width: 17vw;
+}
+
+.importance {
+    max-width: 12vw;
+}
+
+
+/*  */
+
+.testimonialmySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

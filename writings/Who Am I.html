@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <meta charset="utf-8">
+  <meta content="notranslate">
+  <link rel="icon" href="../images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <meta name="keywords" content="Woody Tai, Articles, Publications, Coverage, Mentions">
+  <meta name="author" content="Woody Tai">
+  <meta property="og:image" content="../images/logos/SharingImage.png">
+
+  <meta name="twitter:description" content="Writings by Woody Tai">
+  <meta name="twitter:image" content="../images/logos/SharingImage.png">
+  <link rel="stylesheet" type="text/css" href="../css/writings.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../"><img class="logo" alt="Woody_Tai_logo" src="../images/logos/WoodyTai.png" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <a href="../about">About Me</a>
+        <a href="../resume">Resume</a>
+        <div style="margin: 0; padding: 0; height: 0;">
+          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
+          <div class="dropdown-content">
+            <a href="../articles" class="menuselection">My Writings</a>
+            <a href="../media">Media Coverage</a>
+          </div>
+          <script>
+            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
+              event.preventDefault();
+              const dropdown = document.querySelector('.dropdown-content');
+              dropdown.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function (event) {
+              if (!event.target.matches('.AM_dropdown')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                  dropdown.classList.remove('show');
+                });
+              }
+            });
+          </script>
+        </div>
+        <a href="../contact">Contact Me</a>
+      </nav>
+    </div>
+    <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+  </header>
+
+  <div class="content" style="margin-top: var(--space-small);">
+    <main>
+      <article>
+        <div class="articleheader">
+          <strong>Tai, Cho Fung Woody</strong>
+        </div>
+        <div class="articleinfo">
+          <p><span>Woody Tai</span></p>
+          <p>Date: <span></span></p>
+        </div>
+        <hr>
+      </article>
+      <article>
+
+        <head>
+          <title>Woody Tai's Writings(Personal) — Who Am I?</title>
+          <meta property="og:title" content="Woody Tai's Writings(Personal) — Who Am I?">
+          <meta name="twitter:title" content="Woody Tai's Writings(Personal) — Who Am I?">
+          <meta name="description" property="og:description" itemprop="description" content="">
+          <meta name="twitter:card" content="">
+        </head>
+        <h1 alt="Title">Who Am I?</h1>
+        <p class="articlecentered" alt="Title">Friends?</p>
+        <p>There used to be a saying <q>You are the average of the five people you spend the most time with. </q><cite>—
+            Jim Rohn</cite> I disagree, simply because I believe that our lives is a collection of other people, for
+          example, I still cut apples the way my old friends does; the way I make my bed my gandmother taught me; the
+          way I hang polariods because of a friend back in middle school who loved Disney coming of age movies. </p>
+
+        <p>I am a collection of all the different people I have ever met, whether consciously or sub-consciously. Which
+          means that, I'm imperfect and I'd often find myself struggling to see what I'm working so hard for. </p>
+
+        <p>I aim to change the world for the better, the same thing I have always worked hard for, but theres always
+          that little voice in my head cheering me on, making me want to fight for my future, fight to better our world.
+        </p>
+        <p></p>
+      </article>
+      <main>
+  </div>
+  <div class="footer">
+    <div>
+      <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+      <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a>
+      <p> © 2024 Woody TAI </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.classList.add(savedMode);
+    }
+  });
+</script>

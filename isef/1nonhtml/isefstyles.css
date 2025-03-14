@@ -1,0 +1,201 @@
+@media (min-width: 1024px) {
+  body{
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+body{
+  overflow: auto;
+}
+
+span {
+  color: var(--col-span);
+  font-family: var(--font-asso);
+}
+
+h1 {
+  font-size: 3svh;
+  margin: 0;
+  grid-column: 2;
+  text-align: center;
+  padding-top: 1svh;
+}
+
+h2 {
+  font-size: 2.1svh;
+  margin: 0;
+}
+
+a, 
+p,
+li {
+  font-size: 2svh;
+  margin: 5px 0;
+  text-align: justify;
+  text-justify: inter-word;
+  color: var(--col-main);
+  text-decoration: none;
+}
+
+.credit {
+  font-size: 1.5svh;
+  text-align: left;
+}
+
+.Header-Cont {
+  background-color: var(--col-gray-dark);
+  max-height: 11.5dvh;
+  margin-bottom: 0.5dvh;
+}
+
+.Header-Main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Header-Sub {
+  flex: 1;
+  min-width: 0.25vw;
+  padding: 1svh 1vw 0 1vw;
+}
+
+.NameSplitter {
+  display: none;
+}
+
+@media (max-width: 800px) {
+
+  .Header-Sub {
+    flex: auto;
+  }
+
+  .Header-Main {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .NameSplitter {
+    display: block;
+  }
+  .Header-Local-Main{
+    display: flex;
+    flex-direction: row;
+  }
+  .Header-Local-Sub{
+    width: calc(50% - 2vw);
+    padding: 0.5dvh 0.5vw;
+  }
+  
+  h1{
+    margin-bottom: 1.5dvh;
+  }
+}
+.FairID{
+  font-weight: bolder;
+  font-size: 3svh;
+  text-align: center;
+  background-color: var(--col-span);
+  color: var(--col-main-dark);
+  padding: 0.5dvh 0.5vw;
+  border-radius: 10px;
+  margin-right: 1vw;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1vw;
+  align-items: center;
+  padding: 0 1vw;
+  max-height: 80.5dvh;
+}
+
+.Resume-Courses-Main {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0.5vw;
+  width: 100%;
+}
+
+.Resume-Courses-Sub {
+  border-radius: 1vw;
+  box-shadow: 0 2px 3px var(--col-gray-dark);
+  border: 1px solid var(--col-gray);
+  padding: 1vw;
+  width: 50%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.Resume-Courses-desc {
+  text-align: left;
+  margin-top: 0.3vh;
+}
+
+@media (max-width: 480px) {
+  .Header-Cont{
+    position: fixed;
+    z-index: 1;
+  }
+
+  .Resume-Courses-Main{
+    flex-wrap: wrap;
+    row-gap: 1vh;
+  }
+
+  .flex-container{
+    margin-bottom: 1dvh;
+    margin-top: 35dvh;
+  }
+
+  .Resume-Courses-Sub {
+    width: 100%;
+    background-color: var(--col-gray);
+    box-shadow: none;
+    margin: 3px;
+  }
+}
+
+i {
+  font-style: normal;
+  color: var(--col-key);
+}
+
+.VH-Main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.VH-Sub {
+  flex: 1;
+  min-width: 0.25vw;
+  padding: 1svh 1vw;
+}
+
+@media (max-width: 800px) {
+  .VH-Sub {
+    flex: auto;
+  }
+
+  .VH-Main {
+    gap: 0;
+    flex-direction: row;
+  }
+}
+
+.Result{
+  padding: 0;
+}
+
+@media (max-width: 1600px) {
+  .Header-Cont{
+    max-height: none;
+  }
+  .flex-container{
+    max-height: none;
+    overflow: hidden;
+  }
+}

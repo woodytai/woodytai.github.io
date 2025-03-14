@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="notranslate">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <!-- Meta Tagging -->
+  <title>Woody Tai's Website - Articles</title>
+  <meta name="description"
+    content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings etc. " />
+  <meta name="application-name" content="Woody's App">
+  <meta name="apple-mobile-web-app-title" content="Woody's App">
+  <meta name="author" content="Woody Tai">
+  <meta name="creator" content="Woody Tai">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="woodytai.github.io">
+  <meta property="og:title" content="Woody Tai's Website">
+  <meta property="og:site_name" content="Woody Tai's Website">
+  <meta property="og:description"
+    content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings and articles. ">
+  <meta property="og:image" itemprop="image"
+    content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="My Sharing Page Image">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:secure_url"
+    content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
+  <meta name="twitter:creator" content="@woodyta1">
+  <meta name="twitter:card"
+    content="Hi, I'm Woody, a High School Student, This is a page dedicated to showing my writings and articles. ">
+  <meta name="twitter:title" content="Woody Tai's Website">
+  <meta name="twitter:description" content="I'm trying to better the world, one artcles at a time. ">
+  <meta name="twitter:site" content="woodytai.github.io">
+  <meta name="twitter:image"
+    content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/SharingImage.png">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#dfaf46">
+  <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Woody's App'">
+  <meta name="application-name" content="Woody's App'">
+  <meta name="msapplication-TileColor" content="#9f00a7">
+  <meta name="msapplication-config" content="./images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#333333">
+  <!-- Misc -->
+  <link rel="icon" href="./images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/pages.css">
+  <link rel="stylesheet" type="text/css" href="./css/writings.css">
+  <script src="./js/script.js"></script>
+  <script src="./js/filter.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="./"><img class="logo" alt="Woody_Tai_logo" src="./images/logos/WoodyTai.png" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <a href="./about">About Me</a>
+        <a href="./resume">Resume</a>
+        <div style="margin: 0; padding: 0; height: 0;">
+          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
+          <div class="dropdown-content">
+            <a class="menuselection" href="./articles">My Writings</a>
+            <a href="./media">Media Coverage</a>
+          </div>
+          <script>
+            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
+              event.preventDefault();
+              const dropdown = document.querySelector('.dropdown-content');
+              dropdown.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function (event) {
+              if (!event.target.matches('.AM_dropdown')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                  dropdown.classList.remove('show');
+                });
+              }
+            });
+          </script>
+        </div>
+        <a href="./contact">Contact Me</a>
+        <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content" style="margin-top: var(--space-small);">
+    <main>
+      <h1>Projects & Wrtings</h1>
+      <div class="Resume-Introductory-Main">
+        <div class="Resume-Introductory-Sub">
+          <h2 id="articles_subtitle">My <i>many</i> miscellaneous projects and some of my favourite thoughts and poetry.
+            Below are some of my favorites.</h2>
+          <br>
+          <div class="article">
+            <p>My love of building projects has always come from my wide-ranging interests, or what my parents like to
+              call <q>dabbling in the arts</q>. This journey of exploration has led me into different fields, allowing for
+              a kind of constructive interference in learning that traditional education often misses.</p>
+            <p>While some of my projects are proudly showcased here, others are still cherished secrets, tucked away in
+              the corners of my creativity. You might wonder why. These hidden treasure troves are my personal
+              playgrounds. They remind me that not every creation needs to be shared; some are just for personal
+              reflection and growth. <small>(This can be applied to many things beyond just <i>projects</i>.)</small></p>
+          </div>
+        </div>
+        <div class="Resume-Introductory-Sub">
+          <figure>
+            <div>
+              <img src="./images/static/Jd2Gf1_B_Roll/zJuFharticles.png" alt="Woody Tai">
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <br>
+      <div>
+        <div class="articles-filter-buttons" id="article-div-border-button">
+          <button class="articles-filter-button active" data-filter="all">All</button>
+          <button class="articles-filter-button" data-filter="article">Article</button>
+          <button class="articles-filter-button" data-filter="publications">Essay</button>
+          <button class="articles-filter-button" data-filter="poetry">Poetry</button>
+          <button class="articles-filter-button" data-filter="advocacy">Op-Ed / Advocacy</button>
+          <button class="articles-filter-button" data-filter="stem">Research</button>
+          <button class="articles-filter-button" data-filter="tech">Technology</button>
+          <!-- <button class="articles-filter-button" data-filter="misc">Other</button> -->
+          <input oninput="filterHTML('.articles-cards-container', '.articles-card', this.value)"
+            placeholder="Search for articles..">
+        </div>
+        <div class="articles-cards-container" id="articles-cards-container">
+          <h2 class="media_year_id" id="year2024">2024</h2>
+          <div class="articles-card" data-type="article publications advocacy stem tech">
+            <h6>
+              IBCOL
+              <a rel="nofollow" class="articles-card-a-tag"
+                onclick="showImage('./docu/mentions/IBCoLzUphulLucbVN2JnlyGHZB7EDvrOxZuuS8HayZ5GUmTKtbroNYODAyW2YJYP3edmx3oLNCO5yOKsm4HsM3J1hJNVmTfu/IBCOL_2024_Posterboard.png')">
+                [Posterboard]</a>
+              <a class="articles-card-a-tag" href="https://science-direct.github.io/redirect/?IBCOL24"
+                target="_blank">[White Paper]</a>
+            </h6>
+            <time datetime="2024-11-21">2024-11-21</time>
+          </div>
+          <div class="articles-card" data-type="poetry misc">
+            <h6>
+              What is failure?
+              <a class="articles-card-a-tag" href="./writings/Pfc2A_Favourite Quote" target="_blank">[Here]</a>
+            </h6>
+            <time datetime="2024-09-24">2024-09-24</time>
+          </div>
+
+          <div class="articles-card" data-type="article publications poetry misc">
+            <h6>
+              Local Conference of Youth Hong Kong 2024 — Collective Position Paper
+              <a class="articles-card-a-tag" href="./writings/Who Am I" target="_blank">[Here]</a>
+            </h6>
+            <time datetime="2024-08-01">2024-09-19</time>
+          </div>
+
+          <div class="articles-card" data-type="poetry misc">
+            <h6>
+              Who Am I?
+              <a class="articles-card-a-tag" href="./writings/Who Am I" target="_blank">[Here]</a>
+            </h6>
+            <time datetime="2024-08-01">2024-09-19</time>
+          </div>
+
+          <div class="articles-card" data-type="article advocacy tech">
+            <h6>
+              R R R, so many hard Rs in our new tech-infused world
+              <a class="articles-card-a-tag"
+                href="https://medium.com/@woody.tai/r-r-r-so-many-hard-rs-in-our-new-tech-infused-world-0a6840d28dfc"
+                target="_blank">[Medium]</a>
+            </h6>
+            <time datetime="2024-08-01">2024-08-01</time>
+          </div>
+
+          <div class="articles-card" data-type="article misc">
+            <h6>
+              My favourite quotes
+              <a class="articles-card-a-tag" href="quotes">[Here]</a>
+            </h6>
+            <time datetime="2024-08-01">2024-08-01</time>
+          </div>
+
+          <div class="articles-card" data-type="article advocacy tech">
+            <h6>
+              Understanding Technology
+              <a class="articles-card-a-tag"
+                href="https://medium.com/@woodytai/the-evolving-landscape-of-technology-literacy-4f522ca43eb6"
+                target="_blank">[Medium]</a>
+            </h6>
+            <time datetime="2024-08-01">2024-08-01</time>
+          </div>
+
+          <div class="articles-card" data-type="article publications stem">
+            <h6>
+              Mitsubishi Electric Eco Tech Cup 2024
+              <a class="articles-card-a-tag"
+                href="https://gocuhk-my.sharepoint.com/personal/green-stem_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgreen-stem_cuhk_edu_hk%2FDocuments%2FMitsubishi%20Electric%20Eco%20Tech%20Cup%202024%2F%E5%85%AC%E9%96%8B%E7%B5%84%2FP24_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%99%BC%E5%B1%95%E7%9A%84%E7%A9%BA%E9%96%93%2F%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E4%B8%89%E8%8F%B1%E9%9B%BB%E6%A9%9F%E7%B6%A0%E7%BA%8C%E5%89%B5%E7%A7%91%E7%9B%832024%E5%85%AC%E9%96%8B%E7%B5%84%E5%88%9D%E8%B3%BD%2C%20%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB%2Epdf&parent=%2Fpersonal%2Fgreen-stem_cuhk_edu_hk%2FDocuments%2FMitsubishi%20Electric%20Eco%20Tech%20Cup%202024%2F%E5%85%AC%E9%96%8B%E7%B5%84%2FP24_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%94%9F%E6%B4%BB_%E5%8F%AF%E6%8C%81%E7%BA%8C%E7%99%BC%E5%B1%95%E7%9A%84%E7%A9%BA%E9%96%93&ga=1"
+                target="_blank">[CUHK]</a>
+              <a class="articles-card-a-tag"
+                href="./docu/mentions/k9mysosr2zrwrgzj6lrd1q8c35viwwzw5fcjcu870zmi81gwlltbmu6kwgcundyldyss00lzhdaeud40ktw6n0gwoo2g3ev8/Mitsubishi Electric Eco Tech Cup.pdf"
+                target="_blank">[Archived]</a>
+            </h6>
+            <time datetime="2024-07-15">2024-07-15</time>
+          </div>
+
+          <h2 class="media_year_id" id="year2023">2023</h2>
+          <div class="articles-card" data-type="article poetry misc">
+            <h6>
+              My greatest weekness
+              <a class="articles-card-a-tag" href="./writings/Perfectionism" target="_blank">[Here]</a>
+            </h6>
+            <time datetime="2024-08-01">2023-04-29</time>
+          </div>
+
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </main>
+  </div>
+
+  <div class="footer">
+    <div>
+      <h3><a class="footer" href="mailto:woodytai.secondary.hk@gmail.com" target="_blank">Email</a>
+        // <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+        // <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a></h3>
+      <p> © 2024 Woody TAI </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.articles-filter-button');
+    const cards = document.querySelectorAll('.articles-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const filters = this.dataset.filter.split(',');
+
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        cards.forEach(card => {
+          const cardTypes = card.getAttribute('data-type').split(' ');
+
+          if (filters.includes('all') || filters.some(filter => cardTypes.includes(filter.trim()))) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+<script>
+  function showImage(image_source) {
+    var imageContainer = document.createElement("div");
+    imageContainer.className = "image-container";
+
+    var image = document.createElement("img");
+    image.src = image_source;
+    var closeButton = document.createElement("button");
+    closeButton.textContent = "☒";
+    closeButton.className = "close-btn";
+    document.addEventListener('keydown', function (event) {
+      if (event.code === 'Space' || event.code === 'Enter') {
+        closeButton.onclick();
+      }
+    });
+    closeButton.onclick = function () {
+      document.body.removeChild(imageContainer);
+    };
+    imageContainer.appendChild(closeButton);
+    imageContainer.appendChild(image);
+    document.body.appendChild(imageContainer);
+  }
+</script>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.classList.add(savedMode);
+    }
+  });
+</script>

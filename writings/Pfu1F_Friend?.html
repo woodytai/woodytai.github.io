@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <meta charset="utf-8">
+  <meta content="notranslate">
+  <link rel="icon" href="../images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <meta name="keywords" content="Woody Tai, Articles, Publications, Coverage, Mentions">
+  <meta name="author" content="Woody Tai">
+  <meta property="og:image" content="../images/logos/SharingImage.png">
+
+  <meta name="twitter:description" content="Writings by Woody Tai">
+  <meta name="twitter:image" content="../images/logos/SharingImage.png">
+  <link rel="stylesheet" type="text/css" href="../css/writings.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../"><img class="logo" alt="Woody_Tai_logo" src="../images/logos/WoodyTai.png" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <a href="../about">About Me</a>
+        <a href="../resume">Resume</a>
+        <div style="margin: 0; padding: 0; height: 0;">
+          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
+          <div class="dropdown-content">
+            <a href="../articles" class="menuselection">My Writings</a>
+            <a href="../media">Media Coverage</a>
+          </div>
+          <script>
+            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
+              event.preventDefault();
+              const dropdown = document.querySelector('.dropdown-content');
+              dropdown.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function (event) {
+              if (!event.target.matches('.AM_dropdown')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                  dropdown.classList.remove('show');
+                });
+              }
+            });
+          </script>
+        </div>
+        <a href="../contact">Contact Me</a>
+      </nav>
+    </div>
+    <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+  </header>
+
+  <div class="content" style="margin-top: var(--space-small);">
+    <main>
+      <article>
+        <div class="articleheader">
+          <strong>Tai, Cho Fung Woody</strong>
+        </div>
+        <div class="articleinfo">
+          <p><span>Woody Tai</span></p>
+          <p>Date: <span>25 NOV</span></p>
+        </div>
+        <hr>
+
+        <head>
+          <title>Woody Tai's Writings(Personal) — I hope we still are friends</title>
+          <meta property="og:title" content="Woody Tai's Writings(Personal) — What are we?">
+          <meta name="twitter:title" content="Woody Tai's Writings(Personal) — What are we?">
+          <meta name="description" property="og:description" itemprop="description" content="What are we? Freinds?">
+          <meta name="twitter:card" content="Are we still even friends?">
+        </head>
+        <h2 alt="Title">Friends — I hope</h2>
+        <p class="articlecentered" alt="Title">Friends <small>(I hope)</small></p>
+
+        <p>Last semester we were in the same form group, we both hung out but we were overworked and had some unresolved
+          conflicts, so we took a small break, what we both didn't realise was that the break was <i>a year</i> too
+          long. </p>
+        <p>Moreover, as the new semester commenced, our form groups were once more rearranged. Just when I thought our
+          relationship began to warm, This girl that neither of us was close with, wanted to play matchmaker and decided
+          to ship us together, which made our relationship sour once again, I tried to find you only to be met with
+          hostility, I tried to move on but everything hurts, our lives were way too over twined at that point, I
+          couldn't bear to lose you, I messaged you over the month, only to have an annoyed response flash across your
+          face.</p>
+        <p>Last Friday, we talked for the first time in over a month. Your eyes were tired from working alone, your soul
+          agape. I could see your sorrow hidden behind that Boy Scout face. Hell, that could just be my delusions.</p>
+        <p>So, here I am, and there you are, finding me today. We chatted, not about the mess of insecurities brewing
+          inside, but about work. It bugs me, you know? I've got a million things I want to say, but they all stay stuck
+          in my head. All I could do was look into your eyes, feeling more hurt than ever, yet you seemed to miss it
+          all.</p>
+        <p class="articlecentered"><q>Cursed are those who feel oceans but can only express a drop. </q></p>
+        <p>Then, in the rush between classes, you threw out the idea of us running for head boy together. My eyes lit up
+          with hope, thinking, "Is this real?" You caught that glimmer, but I wonder if you sensed the mix of
+          embarrassment and sadness I am so used to hiding behind my smile. Now, I'm torn. Should I be mad or glad that
+          you're reaching out to me like this?</p>
+        <blockquote>□</blockquote>
+        <p>As we discussed the mundane, I felt a storm of conflicting emotions brewing within me, a tempest of gratitude
+          and longing tangled with uncertainty and unspoken desires. Your proposal to run for head boy together ignited
+          a spark in my soul, a flicker of hope amidst the shadows of doubt.</p>
+        <p>As our eyes met and held, a silent dialogue unfolded between us, left with unspoken truths and the weight of
+          our shared history. I stood there, a mosaic of memories flashing before my eyes, bound moments and emotions
+          left unspoken. </p>
+        <h3>To draw this narrative to a close, I offer a brief Chinese proverb that encapsulates the essence of my
+          diary: "因為自己淋過雨，所以想為他人撐把傘" — a testament to the desire to shield others from the storms we have weathered.
+        </h3>
+      </article>
+      <main>
+  </div>
+  <div class="footer">
+    <div>
+      <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+      <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a>
+      <p> © 2024 Woody TAI </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.classList.add(savedMode);
+    }
+  });
+</script>

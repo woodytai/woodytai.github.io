@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link rel="stylesheet" type="text/css" href="../css/pages.css">
+  <meta charset="utf-8">
+  <meta content="notranslate">
+  <link rel="icon" href="../images/logos/Website_Logo.png" type="image/png" sizes="HeightxWidth|any">
+  <meta name="keywords" content="Woody Tai, Articles, Publications, Coverage, Mentions">
+  <meta name="author" content="Woody Tai">
+  <meta property="og:image" content="../images/logos/SharingImage.png">
+
+  <meta name="twitter:description" content="Writings by Woody Tai">
+  <meta name="twitter:image" content="../images/logos/SharingImage.png">
+  <link rel="stylesheet" type="text/css" href="../css/writings.css">
+  <script src="../js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <a href="../"><img class="logo" alt="Woody_Tai_logo" src="../images/logos/WoodyTai.png" alt="Logo"></a>
+    </div>
+    <div class="menu">
+      <nav>
+        <a href="../about">About Me</a>
+        <a href="../resume">Resume</a>
+        <div style="margin: 0; padding: 0; height: 0;">
+          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
+          <div class="dropdown-content">
+            <a href="../articles" class="menuselection">My Writings</a>
+            <a href="../media">Media Coverage</a>
+          </div>
+          <script>
+            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
+              event.preventDefault();
+              const dropdown = document.querySelector('.dropdown-content');
+              dropdown.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function (event) {
+              if (!event.target.matches('.AM_dropdown')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                  dropdown.classList.remove('show');
+                });
+              }
+            });
+          </script>
+        </div>
+        <a href="../contact">Contact Me</a>
+      </nav>
+    </div>
+    <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+  </header>
+
+  <div class="content" style="margin-top: var(--space-small);">
+    <main>
+      <article>
+        <div class="articleheader">
+          <strong>Tai, Cho Fung Woody</strong>
+        </div>
+        <div class="articleinfo">
+          <p><span>Woody Tai</span></p>
+          <p>Date: <span>30 AUG</span></p>
+        </div>
+        <hr>
+      </article>
+      <article>
+
+        <head>
+          <title>Woody Tai's Writings(Personal) — We are all growing up</title>
+          <meta property="og:title" content="Woody Tai's Writings(Personal) — Favourite Quote — We are all growing up">
+          <meta name="twitter:title" content="Woody Tai's Writings(Personal) — Favourite Quote — We are all growing up">
+          <meta name="description" property="og:description" itemprop="description" content="">
+          <meta name="twitter:card" content="">
+        </head>
+        <h1 alt="Title">Favourite Quote — We are all growing up</h1>
+        <p class="articlecentered" alt="Title">What is failure?</p>
+        <blockquote><em><q>Insert another generic quote about not giving up</q></em></blockquote>
+        <p>When I grew up, I always thought it was a load of crap—who cares? When society defines "success" as the end
+          goal, are we truly punished for making mistakes? Does not giving up matter?</p>
+
+        <p>Before you roll your eyes at me, I don't want to tell you a sad story about how I struggled or resort to
+          another common essay trope. Instead, I hope you will momentarily step into my shoes and view things from my
+          perspective. </p>
+
+        <p>My extracurriculars are pretty nice if I do say so myself, but when I was 15, I didn't realise that I would
+          make a decision that would change my worldview. It wasn't to cure cancer or end world hunger, but it was 2
+          clicks on my laptop, just a mere two clicks. <br>I decided to open a folder on my Desktop. </p>
+
+        <p>What did this folder contain? Every acceptance and rejection email meticulously saved. It took me six
+          grueling hours to sort through my emails. Each email with served as a stark reminder of the things I once took
+          for granted — things that had become almost expected or insignificant. But to think less than a decade ago, I
+          would have nearly cried at the opportunity. </p>
+        <p>Looking back, I couldn’t be more grateful for the rejections. Without them, I would’ve escaped this
+          inferiority complex of not pursuing or being in something prestigious. </p>
+        <blockquote>□</blockquote>
+
+        <p>As I sat there, staring at my screen filled with those acceptance and rejection emails, it hit me like a ton
+          of bricks. These weren't just any email — they were like markers in some of the key chapters of my life. </p>
+
+        <p>That now-filled folder contained more than just emails; it was a reflection of my ambitions, a mirror of my
+          efforts, and a glimpse into the rollercoaster of my emotions. Going through each of those emails was like
+          going back in time, a flashback to the paths I failed, the challenges I lept over, Each click was a step back
+          in time, as if I was reading pages of a memoir that I never knew existed. </p>
+
+        <p>In those moments of nostalgia, the weight of those emails lay not in their text but in the emotions they
+          stirred within me — pride, disappointment, hope, and a stubborn kind of determination — all mixed in a melting
+          pot that made me — me. </p>
+
+        <p>When I closed that folder, I did not merely go back in history; rather, I relived some of the happiest and
+          most destitute parts of my life, but this time I felt a warm stream of tears landing on my lip, the feeling
+          was almost soothing, as if I knew exalted the beauty of the process, and found solace in MY life's diverse
+          experiences. </p>
+
+        <p>What it made me realise was that,</p>
+        <blockquote><em><q>Comparison was the actual thief of joy</q></em></blockquote>
+      </article>
+      <main>
+  </div>
+  <div class="footer">
+    <div>
+      <a class="footer" href="https://github.com/woodytai" target="_blank">Github</a>
+      <a class="footer" href="https://www.linkedin.com/in/woody-tai" target="_blank">LinkedIn </a>
+      <p> © 2024 Woody TAI </p>
+    </div>
+  </div>
+</body>
+
+</html>
+<script>
+  // Function to toggle dark mode
+  function toggleDarkMode() {
+    const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+    const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('mode', newMode);
+  }
+
+  // Check for saved mode on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.classList.add(savedMode);
+    }
+  });
+</script>

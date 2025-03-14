@@ -1,0 +1,557 @@
+/* Base styles */
+:root {
+    --col-main-bright: #000000;
+    --col-asso-bright: hsl(0, 3%, 93%);
+    --col-elevate-bright: #e6e5e5;
+    --col-elevate-dark: #3b3b3b;
+    --col-off-bright: #fe8c0d;
+    --col-gray-bright: #BDBDBD;
+    --col-blue-bright: #7a7aff;
+    --col-main-dark: #eeeded;
+    --col-asso-dark: #333333;
+    --col-off-dark: #556A84;
+    --col-gray-dark: #828282;
+    --col-blue-dark: #acacff;
+
+    --col-generic-special-spanlight-bright: #045a51;
+    --col-generic-special-spanlight-dark: #08c4b0;
+    --col-generic-special-highlight-bright: #558ed8;
+    --col-generic-special-highlight-dark: #002856;
+
+    --col-main: var(--col-main-bright);
+    --col-elevate: var(--col-elevate-bright);
+    --col-off: var(--col-off-bright);
+    --col-asso: var(--col-asso-bright);
+    --col-gray: var(--col-gray-bright);
+    --col-blue: var(--col-blue-bright);
+    --col-blue-op: var(--col-blue-dark);
+    --col-main-op: var(--col-main-dark);
+    --col-off-op: var(--col-off-dark);
+    --col-gray-op: var(--col-gray-dark);
+    --col-generic-special-span: var(--col-generic-special-spanlight-bright);
+    --col-generic-special-span-op: var(--col-generic-special-spanlight-dark);
+    --col-generic-special-highlight: var(--col-generic-special-highlight-bright);
+    --col-generic-special-highlight-op: var(--col-generic-special-highlight-dark);
+    --font-main: "futura-pt", sans-serif;
+    --font-asso: "Avro";
+    --font-second: "sans", serif;
+    --space-header: 4.5%;
+    --space-micro: 10px;
+    --space-small: 3vh;
+    --space-medium: 7%;
+    --space-large: 10%;
+    --space-xlarge: 15vh;
+    --line-height: 1.5em;
+    --line-height-small: 1em;
+    --line-height-large: 2vh;
+    --transition-default: all 0.3s ease-in-out;
+    --transition-cards: all 0.5s ease-in-out;
+    --transition-timeline: opacity 0.5s ease, transform 0.5s ease;
+    --border-radius: 5px;
+
+    --padding-index-functional-default: 20px;
+
+    --cta-h3a: scale(1.2, 1.2);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --col-main: var(--col-main-dark);
+    --col-elevate: var(--col-elevate-dark);
+    --col-asso: var(--col-asso-dark);
+    --col-gray: var(--col-gray-dark);
+    --col-blue: var(--col-blue-dark);
+    --col-off: var(--col-off-dark);
+    transition: var(--transition-default);
+
+    --col-blue-op: var(--col-blue-bright);
+    --col-off-op: var(--col-off-bright);
+    --col-main-op: var(--col-main-bright);
+    --col-gray-op: var(--col-gray-bright);
+
+    --col-generic-special-span: var(--col-generic-special-spanlight-dark);
+    --col-generic-special-span-op: var(--col-generic-special-spanlight-bright);
+    --col-generic-special-highlight: var(--col-generic-special-highlight-dark);
+    --col-generic-special-highlight-op: var(--col-generic-special-highlight-bright);
+}
+
+@font-face {
+    font-family: "Arvo";
+    src: url(../docu/static/KiwOIiKx_fonts/Arvo.woff2);
+}
+
+
+/* Selection System */
+html ::selection {
+    background: var(--col-off);
+}
+
+.listItem .answer ::selection {
+    background: var(--col-off);
+}
+
+#testimonials ::selection {
+    background: var(--col-off-op);
+}
+
+nav ::selection {
+    color: var(--col-main);
+    background: var(--col-gray);
+}
+
+.FAQContainer ::selection {
+    background: var(--col-blue-op);
+    color: var(--col-gray-op);
+}
+
+/* .timeline-item::selection{
+    
+} */
+
+/* SCROLL Behaviour */
+@keyframes smoothscroll1 {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+@keyframes smoothscroll2 {
+
+    from,
+    to {
+        scroll-behavior: smooth;
+    }
+}
+
+html {
+    animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+    animation-name: smoothscroll2;
+    scroll-behavior: smooth;
+}
+
+/* html{
+    scroll-behavior: smooth !important;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+  } */
+/*  */
+
+/* main h6 ::selection{
+    color: var(--col-main);
+    background: var(--col-off);
+} */
+
+
+/*  */
+
+html,
+body {
+    background-color: var(--col-asso);
+    color: var(--col-main);
+    font-family: var(--font-main);
+    transition: var(--transition-default);
+    line-height: var(--line-height-large);
+    margin: 0;
+    padding: 0;
+}
+
+figure img{
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+
+h1,
+h2,
+h4,
+h5 {
+    transition: var(--transition-default);
+    color: var(--col-main);
+}
+
+
+h1 {
+    transition: var(--transition-default);
+    font-family: var(--font-asso);
+    left: 0;
+    font-size: 4vh;
+    line-height: 4.5vh;
+    width: 100%;
+    text-align: center;
+}
+
+h2,
+h2 a {
+    line-height: var(--line-height);
+    margin: 22px 0 1px;
+    padding: 0;
+    font-size: 3vh;
+    overflow-wrap: break-word;
+}
+
+h3 {
+    color: var(--col-main);
+    transition: var(--transition-default);
+    font: var(--font-main);
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0 15px 0 0;
+}
+
+h1 a,
+a {
+    transition: var(--transition-default);
+    color: var(--col-gray);
+    text-decoration: none;
+}
+
+h1 a:hover,
+a:hover,
+h1 a:focus,
+a:focus {
+    color: var(--col-main);
+    text-decoration: underline;
+}
+
+h3 a {
+    transition: var(--transition-default);
+    color: var(--col-main);
+    text-decoration-color: var(--col-main);
+    line-height: inherit;
+    text-decoration: underline;
+    padding: 0 2px 0 0.1vw;
+}
+
+h3 a:hover,
+h3 a:focus {
+    transition: var(--transition-default);
+    color: var(--col-gray);
+    text-decoration: none;
+    padding: 0 0.1vw 0 0.15vw;
+}
+
+h6 {
+    transition: var(--transition-default);
+    font: var(--font-main);
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+h6 a {
+    transition: var(--transition-default);
+    color: var(--col-blue);
+}
+
+h6 a:hover {
+    transition: var(--transition-default);
+    color: var(--col-blue);
+    text-decoration: 2px solid underline var(--col-blue);
+}
+
+h6 button {
+    transition: var(--transition-default);
+    color: var(--col-blue);
+}
+
+h6 button:hover {
+    transition: var(--transition-default);
+    color: var(--col-blue);
+    text-decoration: 2px solid underline var(--col-blue);
+}
+
+h4 {
+    transition: var(--transition-default);
+    font-family: var(--font-main);
+    font-weight: 800;
+    font-size: 1.6vh;
+}
+
+h5 {
+    transition: var(--transition-default);
+    font-size: 2vh;
+    line-height: var(--line-height-small);
+    margin-bottom: 0;
+}
+
+p {
+    color: var(--col-main);
+    transition: var(--transition-default);
+    font: var(--font-main);
+    margin-bottom: var(--space-small);
+}
+
+span {
+    color: var(--col-generic-special-span);
+    font-family: var(--font-asso);
+}
+
+button {
+    border-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid var(--col-gray);
+    line-height: 2.3px;
+    font-size: 2.5vh;
+    padding-right: var(--space-header);
+}
+
+.logo {
+    max-width: 15vw;
+    max-height: 15vh;
+    float: left;
+    padding: 0 1vw;
+    margin: auto;
+}
+
+.menu {
+    display: flex;
+    font-style: normal;
+    color: var(--col-gray);
+    font-size: 3vh;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.menu .menuselection {
+    text-decoration: underline;
+    text-decoration-color: var(--col-main-dark);
+    color: var(--col-main);
+}
+
+.menu a {
+    font-style: normal;
+    color: var(--col-gray);
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: var(--col-main);
+}
+
+nav {
+    font-family: var(--font-second);
+    max-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 35px;
+    font-size: 2.9vh;
+}
+
+
+nav .nav-item {
+    margin-right: 25px;
+}
+
+nav.navbar .nav-item:last-child {
+    margin-right: 0;
+}
+
+.mode-switch {
+    text-align: center;
+    transition: var(--transition-default);
+    cursor: none;
+    border: 1px solid var(--col-gray);
+    background: var(--col-asso);
+    line-height: 1.3;
+    color: var(--col-asso);
+    border-radius: 3px;
+    padding: 0px 3px;
+    margin: 0px 6px;
+}
+
+.mode-switch:hover {
+    border: 2px solid var(--col-blue-op);
+    background: var(--col-main);
+    line-height: 1.6;
+    color: var(--col-asso);
+    border-radius: 10px;
+    padding: 0px 6px;
+    margin: 0px 3px;
+}
+
+footer {
+    padding-top: 1vh;
+    height: fit-content;
+}
+
+.footer ::-moz-selection, .footer ::selection {
+    color: var(--col-gray-op);
+    background: var(--col-main);
+}
+
+.footer a:hover{
+    color: var(--col-generic-special-span-op);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: var(--col-gray);
+    color: var(--col-main);
+    transition: var(--transition-default);
+    padding-top: 0.5vh;
+    padding-bottom: 0.8vh;
+    margin-bottom: 0;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+}
+
+.footer p {
+    margin-bottom: 0px;
+    padding-bottom: 8px;
+}
+
+.content {
+    min-height: 100%;
+    justify-content: center;
+    transition: var(--transition-default);
+    margin: var(--space-medium);
+    line-height: 1.3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--col-main);
+    padding: 8px 8px;
+    text-decoration: none;
+    background-color: var(--col-gray);
+}
+
+.dropdown-content .menuselection {
+    background-color: var(--col-gray-op);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--col-gray-op);
+}
+
+.show {
+    display: block;
+    padding: 0;
+}
+
+
+.special-notes {
+    border-bottom: 1px dashed rgb(32, 33, 36);
+    text-decoration: none;
+    position: relative;
+}
+
+.tooltip {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+}
+
+.special-highlight1 {
+    background-color: var(--col-generic-special-highlight);
+    min-height: 50svh;
+    padding: 2vh 2vw;
+    margin: 3vh 5vw;
+    border-radius: 5px;
+}
+
+/* MOBILE SUPPORT */
+
+/* Mobile Styles */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 776px) {
+    .ExpandedMenu {
+        margin-top: 6vh;
+    }
+
+    .content {
+        margin: 15%;
+    }
+
+    nav {
+        margin-top: 1vh;
+    }
+
+    .menu {
+        padding-top: 1.2vh;
+        padding: 0;
+        display: none;
+        position: absolute;
+        background-color: var(--col-asso);
+        width: 100%;
+        z-index: 10;
+
+    }
+
+    .menu.show {
+        display: flex;
+        padding-top: 30px;
+    }
+
+    .menu a {
+        text-align: left;
+        padding: 1px 5px;
+        margin: 1px 10px;
+        color: var(--col-gray-op);
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .menu a:hover {
+        background-color: var(--col-gray);
+        color: var(--col-main);
+    }
+
+    .menu .menuselection {
+        text-decoration: none;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        margin: 10px;
+        font-size: 24px;
+    }
+
+    header {
+        position: relative;
+    }
+}

@@ -1,0 +1,42 @@
+# All crawling activities on this site are bound by this Crawling Terms and Conditions.
+# See http://woodytai.github.io/admin/crawling-terms
+
+# This is a robots.txt for https://woodytai.github.io
+
+User-agent: *
+Disallow: /admin/*
+Disallow: /private/*
+Disallow: /SUP_private/
+Disallow: *?
+Disallow: *.html&
+Disallow: /404
+
+# User-agent: Googlebot
+# User-agent: Bingbot
+# User-agent: Slurp
+# User-agent: Twitterbot
+
+User-agent: Selenium
+Disallow: /
+
+# AI sources
+# User-agent: Googlebot
+# User-agent: FacebookBot
+# User-agent: Applebot-Extended
+# User-agent: GPTBot
+# User-agent: ChatGPT-User
+# User-agent: ClaudeBot
+# User-agent: anthropic-ai
+# User-agent: cohere-ai
+# User-agent: PerplexityBot
+# User-agent: Diffbot
+# User-agent: Timpibot
+# User-agent: ImagesiftBot
+# User-agent: CCBot
+# User-agent: Omgilibot
+# User-agent: Meta-ExternalAgent
+# User-agent: Meta-ExternalFetcher
+# User-agent: Bytespider
+
+
+Sitemap: https://woodytai.github.io/admin/sitemap
