@@ -158,7 +158,6 @@ body {
     transition: var(--transition-default);
     line-height: var(--line-height-large);
     margin: 0;
-    padding: 0;
 }
 
 figure img{
