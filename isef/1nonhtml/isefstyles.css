@@ -2,6 +2,7 @@
   body{
     max-height: 100vh;
     overflow: hidden;
+    margin-bottom: 3%;
   }
 }
 
@@ -43,34 +44,50 @@ li {
   text-align: left;
 }
 
-.Header-Cont {
+.HV-Cont {
   background-color: var(--col-gray-dark);
   max-height: 11.5dvh;
   margin-bottom: 0.5dvh;
 }
 
-.Header-Main {
+.HV-Main {
   display: flex;
   flex-wrap: wrap;
 }
 
-.Header-Sub {
+.HV-Sub {
   flex: 1;
   min-width: 0.25vw;
-  padding: 1svh 1vw 0 1vw;
+  padding: 1svh 0;
+}
+
+.Methodology .HV-Sub li, .Methodology .HV-Sub ul{
+  max-width: 85%;
+  text-indent: 0;
+  padding-left: 5px;
+  font-size: small;
+  text-align: left;
+}
+
+.Methodology .HV-Sub h3{
+  text-align: left;
 }
 
 .NameSplitter {
   display: none;
 }
 
+.HV-Sub img{
+  padding: 0;
+}
+
 @media (max-width: 800px) {
 
-  .Header-Sub {
+  .HV-Sub {
     flex: auto;
   }
 
-  .Header-Main {
+  .HV-Main {
     gap: 0;
     flex-direction: column;
   }
@@ -78,17 +95,20 @@ li {
   .NameSplitter {
     display: block;
   }
-  .Header-Local-Main{
+  .HV-Local-Main{
     display: flex;
     flex-direction: row;
   }
-  .Header-Local-Sub{
+  .HV-Local-Sub{
     width: calc(50% - 2vw);
     padding: 0.5dvh 0.5vw;
   }
   
   h1{
     margin-bottom: 1.5dvh;
+  }
+  .HV-Sub img{
+    padding-bottom: 2svh;
   }
 }
 .FairID{
@@ -111,7 +131,7 @@ li {
   max-height: 80.5dvh;
 }
 
-.Resume-Courses-Main {
+.Countent-Quadrent-Main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -119,8 +139,8 @@ li {
   width: 100%;
 }
 
-.Resume-Courses-Sub {
-  border-radius: 1vw;
+.Countent-Quadrent-Sub {
+  /* border-radius: 1vw; */
   box-shadow: 0 2px 3px var(--col-gray-dark);
   border: 1px solid var(--col-gray);
   padding: 1vw;
@@ -129,18 +149,18 @@ li {
   box-sizing: border-box;
 }
 
-.Resume-Courses-desc {
+.Countent-Quadrent-desc {
   text-align: left;
   margin-top: 0.3vh;
 }
 
 @media (max-width: 480px) {
-  .Header-Cont{
+  .HV-Cont{
     position: fixed;
     z-index: 1;
   }
 
-  .Resume-Courses-Main{
+  .Countent-Quadrent-Main{
     flex-wrap: wrap;
     row-gap: 1vh;
   }
@@ -150,7 +170,7 @@ li {
     margin-top: 35dvh;
   }
 
-  .Resume-Courses-Sub {
+  .Countent-Quadrent-Sub {
     width: 100%;
     background-color: var(--col-gray);
     box-shadow: none;
@@ -186,16 +206,22 @@ i {
   }
 }
 
-.Result{
+.Result, .HV-Sub.Result{
   padding: 0;
 }
 
 @media (max-width: 1600px) {
-  .Header-Cont{
+  .HV-Cont{
     max-height: none;
   }
   .flex-container{
     max-height: none;
     overflow: hidden;
   }
+}
+
+.listArrow {
+  transform: rotate(90deg);
+  width: 16px;
+  height: 16px;
 }
