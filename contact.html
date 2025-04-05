@@ -93,7 +93,7 @@
             <h1 class="centrered" id="contact_title" style="margin-top:0;" >Contact Me!</h1>
             <br>
             <h2 id="contact_main" style="text-align: left; padding: inherit; font-style: oblique;"><strong>Connect with me and chat!</strong> </h2><br>
-            <h3 id="contact_email">Email: <a href="matilto:info@woodytai.com"><strong> woodytai.secondary<wbr>.hk<wbr>@gmail.com</strong></a></h3> <br>
+            <h3 id="contact_email">Email: <a href="matilto:info@woodytai.com"><strong> info@woodytai.com</strong></a></h3> <br>
             <h3 id="contact_linkedin">LinkedIn: <a href="https://www.linkedin.com/in/woody-tai" target="_blank"><strong>linkedin.com/in/<wbr>woody-tai</strong></a></h3>
             <hr>
             <!-- <div class="contact-primary">
@@ -138,6 +138,7 @@
             var urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('technical')) {
                 changedata("https://docs.google.com/forms/d/e/1FAIpQLSfYgaKRwncpNC3NlshkvM0CJwc1cXUWvJ89jM01sQYKVDtEGQ/viewform?embedded=true","","Bug Report Form","Fill in the form bellow to the best of your abilities, we will try to get back to you in 2 weeks","True")
+                document.getElementById("contact_email").innerHTML = 'Email: <a href="matilto:admin@woodytai.com"><strong> admin@woodytai.com</strong>';
             }
             if (urlParams.has('admin')) {
                 changedata("https://docs.google.com/forms/d/e/1FAIpQLSeu0ud4p5LfZra9FiJe0s3JpHEOxarS-BlOr_Jsi9F29Yz1bQ/viewform??embedded=true","","Admin Related Issues","Please fill in the form bellow to the best of your abilities, I'll will try to get back to you as soon as possible","True")
