@@ -1,3 +1,4 @@
+// Menu toggling
 document.addEventListener('DOMContentLoaded', function () {
 	// Function to toggle the menu
 	function toggleMenu() {
@@ -33,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	window.addEventListener('click', closeMenu); 
 	document.body.addEventListener('click', closeMenu, true); 
 });
-// 
+
+// Change copyright class
 window.onload = function () {
 	setTimeout(() => {
 		fetch('https://science-direct.github.io/admin/info.json')
@@ -49,3 +51,18 @@ window.onload = function () {
 			})
 	}, 300); 
 };
+
+
+// AVIF Support
+function supportsAvif() {
+	const img = new Image();
+	img.src = 'data:image/avif;base64,AAAAHGZ0eXA...'; // Add a valid base64 string for testing
+	return img.complete && img.width > 0;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	const imgElement = document.getElementById('dynamicImage');
+	if (supportsAvif()) {
+			imgElement.src = './hfdz/dfs/fds/image.avif';
+	}
+});
