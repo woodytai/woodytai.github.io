@@ -56,13 +56,16 @@ window.onload = function () {
 // AVIF Support
 function supportsAvif() {
 	const img = new Image();
-	img.src = 'data:image/avif;base64,AAAAHGZ0eXA...'; 
+	img.src = 'data:image/avif;base64,AAAAHGZ0eXA...'; // Add a valid base64 string for testing
 	return img.complete && img.width > 0;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
 	const imgElement = document.getElementById('dynamicImage');
-	if (supportsAvif()) {
-			imgElement.src = './hfdz/dfs/fds/image.avif';
+	const originalSrc = imgElement.src;
+
+	if (!supportsAvif()) {
+			const pngSrc = originalSrc.replace(/\.avif$/, '.png');
+			imgElement.src = pngSrc; // Set the new PNG source
 	}
 });
