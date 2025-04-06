@@ -56,7 +56,7 @@ window.onload = function () {
 // AVIF Support
 function supportsAvif() {
 	const img = new Image();
-	img.src = 'data:image/avif;base64,AAAAHGZ0eXA...'; // Add a valid base64 string for testing
+	img.src = 'data:image/avif;base64,AAAAHGZ0eXA...'; 
 	return img.complete && img.width > 0;
 }
 
