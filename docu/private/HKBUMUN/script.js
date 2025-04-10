@@ -1,5 +1,6 @@
 // JavaScript for FAQ toggles
 document.addEventListener('DOMContentLoaded', function() {
+  // alert("BIG DISCLAIMER: THE INFO HERE REFLECTS US INTRESTES, SOME POINTS ARE EXAGGERATED, DO NOT USE THIS FOR ACADEMIC RESEARCH")
   const questions = document.querySelectorAll('.faq-question');
   
   questions.forEach(question => {
