@@ -25,32 +25,8 @@
     </div>
     <div class="menu">
       <nav>
-        <a href="../about">About Me</a>
-        <a href="../resume">Resume</a>
-        <div style="margin: 0; padding: 0; height: 0;">
-          <a class="AM_dropdown menuselection" href="">Articles & Media</a>
-          <div class="dropdown-content">
-            <a href="../articles" class="menuselection">My Writings</a>
-            <a href="../media">Media Coverage</a>
-          </div>
-          <script>
-            document.querySelector('.AM_dropdown').addEventListener('click', function (event) {
-              event.preventDefault();
-              const dropdown = document.querySelector('.dropdown-content');
-              dropdown.classList.toggle('show');
-            });
-
-            window.addEventListener('click', function (event) {
-              if (!event.target.matches('.AM_dropdown')) {
-                const dropdowns = document.querySelectorAll('.dropdown-content');
-                dropdowns.forEach(dropdown => {
-                  dropdown.classList.remove('show');
-                });
-              }
-            });
-          </script>
-        </div>
-        <a href="../contact">Contact Me</a>
+        <a href="../">Home</a>
+        <a href="../articles">Back</a>
       </nav>
     </div>
     <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
