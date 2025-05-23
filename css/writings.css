@@ -57,38 +57,31 @@ blockquote {
 }
 
 .Generic-Header-Main {
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
+    width: 100%; 
+    flex-direction: row;
+}
+
+.Generic-Header-Sub {
+    flex: auto;
+    width: calc(50% - 1vw);
+}
+
+@media (min-width: 1000px) {
+.Generic-Header-Main {
+    flex-direction: row;
 }
 
 .Generic-Header-Sub {
     flex: 1;
-    min-width: 0.33vw;
+    min-width: 200px; 
 }
-
-.Generic-Header-Sub ul {
-    list-style: none;
-}
-
-.Generic-Header-Sub ul a,
-.Generic-Header-Sub ul span {
-    color: var(--col-main);
-    text-decoration: underline;
-}
-
-@media (max-width: 800px) {
-    .Generic-Header-Main {
-        gap: 0;
-    }
-
-    .Generic-Header-Sub {
-        flex: auto;
-        width: calc(50% - 1vw);
-    }
 }
 
 @media (max-width: 480px) {
-    .Generic-Header-Sub {
-        width: 100%;
-    }
+.Generic-Header-Sub {
+    width: 100%;
+}
 }
