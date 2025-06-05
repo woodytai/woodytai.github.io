@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="notranslate">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <!-- Meta Tagging -->
+    <title>Oh no an error | We've got some trouble</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="The page you are looking for does not exist. Please check the URL or return to the homepage."/>
+    <meta name="author" content="Woody Tai">
+    <meta name="creator" content="Woody Tai">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="woodytai.github.io/isef/">
+    <meta property="og:title" content="EGSD003T - Dual Functional Catalyst for Green Hydrogen Prod. | Regeneron ISEF 2025">
+    <meta property="og:site_name" content="EGSD003T - Dual Functional Catalyst for Green Hydrogen Prod. | Regeneron ISEF 2025">
+    <meta property="og:description" content="The page you are looking for does not exist. Please check the URL or return to the homepage.">
+    <meta property="og:image" itemprop="image"
+        content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/ISEFSharingImage.png">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:alt" content="My Sharing Page Image">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:secure_url"
+        content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/ISEFSharingImage.png">
+    <meta name="twitter:creator" content="@woodyta1">
+    <meta name="twitter:card"
+        content="Hi, We're Woody and David. We are a high school student trying to build a better world using science. Our project is on using electrocatalysts for Green Hydrogen Generation">
+    <meta name="twitter:description" content="Join our journey in deisgning a way to make hydrogen a fuel!">
+    <meta name="twitter:site" content="woodytai.github.io/isef/">
+    <meta name="twitter:image"
+        content="woodytai.github.io/images/static/1edbd99501ac6544ade32222f1791e3871e7290cda66468aa217b994a6670857f8097290feaf613a1e94494b69ef93cc/ISEFSharingImage.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/isef/docu/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="mask-icon" href="/isef/images/favicon/safari-pinned-tab.svg" color="#dfaf46">
+    <link rel="icon" type="image/svg+xml" href="/isef/docu/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/isef/docu/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/isef/docu/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/isef/docu/favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="/isef/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#9f00a7">
+    <meta name="msapplication-config" content="/isef/images/favicon/browserconfig.xml">
+    <!-- Misc -->
+    <link rel="icon" href="./img/ISEF_Logo.png" type="image/png" sizes="HeightxWidth|any">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/pages.css">
+    <script src="./1nonhtml/script.js"></script>
+</head>
+<!--  -->
+<body>
+  <header>
+    <div>
+        <a href="./"><img class="logo" id="logo" alt="EGSD003T logo" src="./img/ISEF_Logo.png"></a>
+    </div>
+    <div class="menu">
+        <nav>
+            <a href="./about">About Us</a>
+            <a href="./quadchart.html" target="_blank">Quad Chart</a>
+            <a href="./contact">Reach Out!</a>
+        </nav>
+        <div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
+    </div>
+</header>
+	<main>
+	   <div class="errorcontainer">
+	     <div class="errortext">
+	       <h1>Page Not Found</h1>
+	       <p>An unexpected condition was encountered. </p>
+	       <p>We can't seem to find the page you're looking for. Please check the URL for any typos.</p>
+	       <br>
+	       <ul class="errorlist">
+	         <li><a href="./">Go to Homepage</a></li>
+	         <li><a href="/journey">See our journey</a></li>
+	       </ul>
+	     </div>
+	   </div>
+    </main>
+</body>
+<script>
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+        const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
+        const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('mode', newMode);
+    }
+
+    // Check for saved mode on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode) {
+            document.body.classList.add(savedMode);
+        }
+    });
+</script>
+</html>

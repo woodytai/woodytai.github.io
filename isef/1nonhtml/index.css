@@ -1,0 +1,215 @@
+.index-html-main {
+  scroll-behavior: smooth;
+}
+
+.index-html-content {
+  padding: 20px;
+}
+
+.optional-ToC-index {
+  display: none;
+}
+
+.index-html-header-wrapped {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.og-div {
+  height: 70dvh;
+  display: flex;
+  justify-content: center;
+  padding: var(--padding-index-functional-default);
+}
+
+.og-div .content {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 776px) {
+  .optional-ToC-index {
+    display: block;
+    font-size: 2.3vh;
+    padding: var(--padding-index-functional-default);
+    line-height: 2.5vh;
+    height: 32vh;
+    justify-content: center;
+  }
+
+  .og-div {
+    height: 45vh;
+  }
+} 
+
+.FAQContainer {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.FAQContainer .list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.FAQContainer .listItem {
+  padding: 10px 0;
+  transition: background 0.3s;
+}
+
+.FAQContainer .listLink {
+  text-decoration: none;
+  color: var(--col-blue-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.FAQContainer .listArrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+}
+
+.FAQContainer .listTitle {
+  font-size: 2.75vh;
+  line-height: 2.8vh;
+  flex: 1;
+}
+
+.FAQContainer .cxicon {
+  width: 16px;
+  height: 16px;
+}
+
+.FAQContainer .answer {
+  display: none;
+  margin-top: 10px;
+  color: var(--col-off-bright);
+}
+
+.FAQContainer .answer h6 {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 2.5vh;
+  line-height: 2.6vh;
+  text-indent: 20px;
+}
+
+.FAQContainer .answer h6 a {
+  color: var(--col-blue-dark);
+}
+
+.FAQContainer .listItem.active .answer {
+  display: block;
+}
+
+.FAQContainer .listItem.active .listArrow {
+  transform: rotate(90deg);
+}
+
+/* Mobile support for FAQ */
+@media (min-width: 600px) {
+  .FAQContainer .answer h6 {
+    text-indent: 0px;
+  }
+
+  .FAQContainer .listArrow {
+    margin-left: 2%;
+  }
+
+  .FAQContainer .list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .FAQContainer .listItem {
+    border: none;
+    padding: 15px;
+    background: var(--col-gray-dark);
+    color: var(--col-asso);
+    border-radius: 5px;
+    box-shadow: 0 1px 5px var(--col-off-op);
+  }
+
+  .FAQContainer .listItem:hover {
+    background: var(--col-asso);
+  }
+}
+
+.cta{
+  padding: 10px;
+  color: var(--col-off-bright);
+  background-color: var(--col-generic-special-spanlight-bright);
+  border-radius: var(--border-radius);
+}
+
+.cta:hover{
+  padding: 11px;
+  color: var(--col-off-bright);
+  font-style: oblique;
+  background-color: var(--col-generic-special-spanlight-bright);
+  border-radius: var(--border-radius);
+}
+
+
+.Introductory-Main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Introductory-Sub {
+  flex: 1;
+  min-width: 0.2vw;
+  padding: 2dvh 0.4vw;
+  margin: 0 0.4vw;
+  background-color: var(--col-elevate);
+  border-radius: var(--border-radius);
+  max-width: 30vw;
+}
+
+@media (max-width: 800px) {
+  .Introductory-Sub {
+    flex: auto;
+    width: calc(80% - 1vw);
+    max-width: 100%;
+    margin: 0.5dvh 0;
+  }
+
+  .Introductory-Main {
+    flex-direction:column;
+    gap: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .Introductory-Sub{
+    padding-bottom: 0;
+  }
+
+  #IndexCost{
+    flex-direction: row;
+    align-items: flex-start
+  }
+}
+
+@media (max-width: 480px) {
+  .Introductory-Sub {
+    width: 100vw; 
+  }
+  #IndexCost{
+    flex-direction: column;
+  }
+}
+
+.line{
+  color: var(--col-main);
+  display: inline-block;
+}
