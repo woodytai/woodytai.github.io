@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-  <loc>https://woodytai.github.io/</loc>
+  <loc>https://woodytai.com/</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/404</loc>
+  <loc>https://woodytai.com/404</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.0</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/linktree</loc>
+  <loc>https://woodytai.com/linktree</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.95</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/about</loc>
+  <loc>https://woodytai.com/about</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.90</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/resume</loc>
+  <loc>https://woodytai.com/resume</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/articles</loc>
+  <loc>https://woodytai.com/articles</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/media</loc>
+  <loc>https://woodytai.com/media</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/contact</loc>
+  <loc>https://woodytai.com/contact</loc>
   <lastmod>2025-01-01T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.70</priority>
 </url>
 <url>
-  <loc>https://woodytai.github.io/writings/Perfectionism</loc>
-  <lastmod>2025-01-01T00:00:00+08:00</lastmod>
+  <loc>https://woodytai.com/writings/ISEF_Reflection</loc>
+  <lastmod>2025-06-05T00:00:00+08:00</lastmod>
   <changefreq>monthly</changefreq>
-  <priority>0.5</priority>
+  <priority>1</priority>
 </url>
 </urlset>
